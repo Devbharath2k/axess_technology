@@ -9,27 +9,35 @@
     transition: .3s;
 }
 
-button{
-    background-color:skyblue;
+/* Define your custom active color */
+.nav-pills .nav-item .nav-link.active {
+    background-color: rgba(10, 145, 10, 0.305) !important; 
+    color: white; 
 }
 
 
-#pills-tab{
+button {
+    background-color: skyblue;
+}
+
+
+#pills-tab {
     justify-content: center;
     align-items: center;
-    padding: 1px 10px ;
+    padding: 1px 10px;
 }
 
-.nav-link{
+.nav-link {
     background-color: none;
 }
 
-.form-control:hover ,.form-control:focus {
-    border-bottom-color:gold !important;
+.form-control:hover,
+.form-control:focus {
+    border-bottom-color: gold !important;
     /* background-color: red; */
-  }
+}
 
-  
+
 
 
 #navber-icons {
@@ -49,7 +57,8 @@ nav.navbar {
     /* background-color: #495469 !important; */
 }
 
-.dropdown:hover>.dropdown-menu, .dropdown:focus>.dropdown-menu {
+.dropdown:hover>.dropdown-menu,
+.dropdown:focus>.dropdown-menu {
     display: flex;
     width: 60%;
     margin-left: auto;
@@ -77,6 +86,7 @@ nav.navbar {
     padding: 10 22px !important;
     justify-content: end !important;
 }
+
 nav ul li a {
     font-size: medium !important;
 }
@@ -104,25 +114,20 @@ footer a:hover {
     margin-top: 0;
 }
 
-.updesign{
-    /* padding :30px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;; */
 
-}
 
-.hero-banner{
+.hero-banner {
     /* background-color: #f0f0fc;  */
-    
+
     background-position: center;
     background-size: cover;
     /* height: 500px; */
     height: 80vh;
 }
-#updesign{
+
+#updesign {
     margin-top: -250px;
-   
+
 }
 
 /* desktop has been end  */
@@ -137,8 +142,8 @@ footer a:hover {
         margin-top: 10px;
     }
 
-    .contact-container{
-        width: 85% !important;
+    .contact-container {
+        width: 90% !important;
     }
 }
 
@@ -147,11 +152,11 @@ footer {
     padding-top: 12px !important;
     padding: 12px 12px !important;
     text-decoration: none !important;
-    color:white;
+    color: white;
 }
 
-  .new-contact-design {
+.new-contact-design {
     height: 650px;
     position: relative;
     margin-bottom: 500px;
-} 
+}
