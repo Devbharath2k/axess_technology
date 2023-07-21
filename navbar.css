@@ -1,0 +1,18 @@
+.hover-me>ul{
+    display: none;
+}
+
+.hover-me:hover>ul , .hover-me:focus-visible>ul{
+    display: block;
+}
+
+.dropdown-list i {
+    width: 20px;
+    margin-left: -20px;
+}
+
+.dropdown-list:hover i {
+    display: block;
+    opacity: 2;
+    margin: 0;
+}

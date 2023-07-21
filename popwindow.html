@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- font-awosome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- remixicons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    <style>
+        .form-control:hover,
+        .form-control:focus {
+            border-bottom-color: gold !important;
+        }
+    </style>
+    <div class="container-fluid">
+        <!-- Button trigger modl -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Launch static backdrop modal
+          </button>
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5 ms-auto" id="staticBackdropLabel">Welcome to Axess Technology</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                
+                    <div class="modal-body">
+                        <form class="row align-items-center g-4 gx-5">
+                            <div class="col-md-6">
+                                <input type="text" id=""
+                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                    style="height: 22px;" placeholder="Username" required>
+                            </div>
+                            <div class="col-md-6" style="color:rgb(215, 181, 94);">
+                                <input type="text" id=""
+                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                    style="height: 22px;" placeholder="Lastname" required>
+                            </div>
+                            <div class="col-md-6" style="color:rgb(215, 181, 94);">
+                                <input type="email" id=""
+                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                    style="height: 22px;" placeholder="E-mail" required>
+                            </div>
+                            <div class="col-md-6" style="color:rgb(215, 181, 94);">
+                                <input type="email" id=""
+                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                    style="height: 22px;" placeholder="Mobile" required>
+                            </div>
+                            <div class="col-md-12 align-content-center">
+                                <ul class="nav nav-pills mb-3   text-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item mx-2" role="presentation">
+                                        <button class="nav-link active rounded-pill  btn-success" id="pills-presales-tab"
+                                            data-bs-toggle="pill" data-bs-target="#pills-presales" style="font-size: 13px;"
+                                            type="button" role="tab" aria-controls="pills-presales"
+                                            aria-selected="true">pre-sales</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mx-2  rounded-pill" style="font-size: 13px;"
+                                            id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
+                                            type="button" role="tab" aria-controls="pills-project"
+                                            aria-selected="false">project
+                                            proposal</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mx-2 rounded-pill " style="font-size: 13px;"
+                                            id="pills-support-tab" data-bs-toggle="pill" data-bs-target="#pills-support"
+                                            type="button" role="tab" aria-controls="pills-support"
+                                            aria-selected="false">talk to
+                                            support</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link mx-2 rounded-pill" style="font-size: 13px;"
+                                            id="pills-dev-tab" data-bs-toggle="pill" data-bs-target="#pills-dev"
+                                            type="button" role="tab" aria-controls="pills-dev"
+                                            aria-selected="false">Others</button>
+                                    </li>
+
+                                </ul>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active rounded-pill" id="pills-presales" role="tabpanel"
+                                        aria-labelledby="pills-presales-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-project" role="tabpanel"
+                                        aria-labelledby="pills-project-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-md-6 ">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 ">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1"> What type of project?</p>
+                                                <!-- Default checked radio -->
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked />
+                                                    <label class="form-check-label" for="flexRadioDefault2"> Digital
+                                                        Products </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked />
+                                                    <label class="form-check-label" for="flexRadioDefault2"> Services
+                                                        Consulting</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                        id="flexRadioDefault2" checked />
+                                                    <label class="form-check-label" for="flexRadioDefault2">IT Training
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="mt-2">What is your approximate budget</p>
+                                                <form class="multi-range-field my-5 pb-5">
+                                                    <input id="myRange" class="multi-range w-50 h-25" type="range"
+                                                        min="0" max="100" />
+                                                    <p id="selectedValue"></p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-support" role="tabpanel"
+                                        aria-labelledby="pills-support-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 mt-2">
+                                                <p style="font-size: 12px;">Expected Project Delivery Time Frame *</p>
+                                                <div class="input-group">
+                                                    <select id="mail"
+                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
+                                                        <option value="" disabled selected>Select an option</option>
+                                                        <option value="option1">wps.develpement pro </option>
+                                                        <option value="option2">wc dosc</option>
+                                                        <option value="option3">1-3 months</option>
+                                                        <option value="option3">above 4 months</option>
+                                                    </select>
+                                                    <i class="ri-arrow-down-fill pt-2 "
+                                                        style="padding-right: 22px; font-size:12px ;"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-dev" role="tabpanel"
+                                        aria-labelledby="pills-dev-tab" tabindex="0">
+                                        <div class="row">
+                                            <div class="col-md-6 mt-4 text-capitalize">
+
+                                                <input type="text" name="fname" style="height: 22px;"
+                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                                    placeholder=" First name" id="">
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+
+                                                <input type="text" name="fname" style="height: 22px;"
+                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                                    placeholder="last name" id="">
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+
+                                                <input type="text" name="E-mail" style="height: 22px;"
+                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                                    placeholder="email id" id="">
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+
+                                                <input type="text" name="moblie" style="height: 22px;"
+                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0 "
+                                                    placeholder="+91 777777" id="">
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+
+                                                <input type="date" name="date"
+                                                    class="form-control  shadow-none border-0 rounded-0 border-bottom ps-0 "
+                                                    placeholder="date of Birth" id="">
+                                            </div>
+                                            <div class="col-md-6 mt-4">
+                                                <input type="text" name="fname"
+                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
+                                                    placeholder="Address" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="border-0">
+                            <textarea class="form-control my-2" id="textAreaExample1" placeholder="Message"
+                                rows="2"></textarea>
+                            <button class="btn btn-success form-control my-2">Register</button>
+                            <button class="form-control my-2 text-white btn-primary text-center"
+                                style="background-color: #dd4b39;" type="submit"><i class="fab fa-google me-2"></i> Sign
+                                in
+                                with google</button>
+                            <button class="btn  form-control my-2 btn-primary" style="background-color: #3b5998;"
+                                type="submit"><i class="fab fa-facebook-f me-2"></i>Sign in with facebook</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        const rangeInput = document.getElementById("myRange");
+        const selectedValue = document.getElementById("selectedValue");
+
+        rangeInput.addEventListener("input", function () {
+            const value = rangeInput.value;
+            const formattedValue = formatValue(value);
+            selectedValue.textContent = formattedValue;
+        });
+
+        function formatValue(value) {
+            const minValue = 1500;
+            const maxValue = 7500;
+            const minDisplayValue = 1500;
+            const maxDisplayValue = 8500;
+
+            const range = maxValue - minValue;
+            const displayRange = maxDisplayValue - minDisplayValue;
+            const scaledValue = (value / range) * displayRange;
+            const formattedValue = scaledValue + minDisplayValue;
+
+            return formattedValue.toLocaleString("en-US", { style: "currency", currency: "USD" });
+        }
+    </script>
+</body>
+
+</html>
