@@ -384,8 +384,8 @@
                                             placeholder="" id="">
                                     </div>
                                 </div>
-                                <button type="button" class="btn btn-primary rounded-5 shadow-3 mt-4 form-control">Send
-                                  Me</button>
+                                <input type="submit" class="btn btn-primary form-control mt-2" name="submit"
+                                    value="Send">
                         </form>
                     </div>
                 </div>
@@ -468,7 +468,8 @@
         AOS.init();
     </script>
 
-    <script src="contact.js"></script>
+    <script src="contact.php"></script>
+    <!-- <script src="contact.js"></script> -->
 
     <script>
         let mbFun = () => {
@@ -483,6 +484,32 @@
         $('.nav-pills .nav-link').click(function () {
             mbFun();
         })
+
+        $(document).ready(function () {
+            const rangeInput = $("#myRange");
+            const selectedValue = $("#selectedValue");
+
+            rangeInput.on("input", function () {
+                const value = rangeInput.val();
+                const formattedValue = formatValue(value);
+                selectedValue.text(formattedValue);
+            });
+
+            function formatValue(value) {
+                const minValue = 1500;
+                const maxValue = 7500;
+                const minDisplayValue = 1500;
+                const maxDisplayValue = 8500;
+
+                const range = maxValue - minValue;
+                const displayRange = maxDisplayValue - minDisplayValue;
+                const scaledValue = (value / range) * displayRange;
+                const formattedValue = scaledValue + minDisplayValue;
+
+                return formattedValue.toLocaleString("en-US", { style: "currency", currency: "USD" });
+            }
+        });
+
     </script>
 </body>
 
