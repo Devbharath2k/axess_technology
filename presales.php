@@ -6,7 +6,7 @@ $con = mysqli_connect("srv787.hstgr.io", "u842521168_devbharath", "Admin@123", "
 if (isset($_POST['submit'])) {
 
     // Fetching and storing the form data in variables
-    $fname = $con->real_escape_string($_POST['fname']);
+    $fname = $con->real_escape_string($_POST['Fname']);
     $lname = $con->real_escape_string($_POST['lname']);
     $email = $con->real_escape_string($_POST['email']);
     $mobile = $con->real_escape_string($_POST['mobile']);
