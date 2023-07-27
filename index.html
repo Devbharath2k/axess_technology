@@ -24,6 +24,12 @@
 
 </head>
 
+<style>
+    section{
+        overflow-x: hidden !important;
+    }
+</style>
+
 <body class="overflow-x-hidden">
     <!-- <div class="" style="background-color: #eff6ff;">
         <div class="row" id="addressbar">
@@ -234,7 +240,7 @@
             <div class="navbar" id="main_nav">
                 <ul class="navbar-nav mx-auto px-6 text-center">
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link px-3" href="#">company</a>
+                        <a class="nav-link px-3 d-flex align-items-center justify-content-center" href="#"><span>company </span><i class="ri-arrow-down-s-line"></i></a>
                         <div class="dropdown-menu megamenu p-0" role="menu">
                             <ul class="text-decoration-none fs-5 text-center p-4">
                                 <li><a href="about.html">company profile</a></li>
@@ -909,7 +915,7 @@
     <!-- Popup Form -->
 
     <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    <div class="modal fade p-0" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
         aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog rounded-4">
             <div class="modal-content rounded-3">
@@ -933,29 +939,29 @@
                             <input type="email" id="" class="form-control" placeholder="Mobile" required>
                         </div>
                         <div class="col-md-12 align-content-center">
-                            <ul class="nav nav-pills mb-3 text-center" id="pills-tab" role="tablist">
+                            <ul class="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist">
                                 <li class="nav-item mx-2" role="presentation">
                                     <button class="nav-link active rounded-pill" id="pills-presales-tab"
-                                        data-bs-toggle="pill" data-bs-target="#pills-presales" style="font-size: 13px;"
+                                        data-bs-toggle="pill" data-bs-target="#pills-presales" style="font-size: 12px;"
                                         type="button" role="tab" aria-controls="pills-presales"
                                         aria-selected="true">pre-sales</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-2  rounded-pill `" style="font-size: 13px;"
+                                    <button class="nav-link mx-2  rounded-pill `" style="font-size: 12px;"
                                         id="pills-project-tab" data-bs-toggle="pill" data-bs-target="#pills-project"
                                         type="button" role="tab" aria-controls="pills-project"
                                         aria-selected="false">project
                                         proposal</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-2 rounded-pill  " style="font-size: 13px;"
+                                    <button class="nav-link mx-2 rounded-pill  " style="font-size: 12px;"
                                         id="pills-support-tab" data-bs-toggle="pill" data-bs-target="#pills-support"
                                         type="button" role="tab" aria-controls="pills-support"
-                                        aria-selected="false">talk to
+                                        aria-selected="false">To
                                         support</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-2 rounded-pill " style="font-size: 13px;"
+                                    <button class="nav-link mx-2 rounded-pill " style="font-size: 12px;"
                                         id="pills-dev-tab" data-bs-toggle="pill" data-bs-target="#pills-dev"
                                         type="button" role="tab" aria-controls="pills-dev"
                                         aria-selected="false">Others</button>
