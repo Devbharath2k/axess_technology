@@ -15,11 +15,13 @@ if (isset($_POST['submit'])) {
     $Tech_Product3 = $con->real_escape_string($_POST['Tech_Product3']);
     $Tech_Product4 = $con->real_escape_string($_POST['Tech_Product4']);
     $Message1 = $con->real_escape_string($_POST['Message1']);
+    echo $Message1;
 
     // Query to insert the variable data into the database
-    $sql = "INSERT INTO axess_technology (Fname, Lname, Email, Mobile, Tech_Product1, Tech_Product2, Tech_Product3, Tech_Product4, Message1)
-            VALUES ('$Fname', '$Lname', '$Email', '$Mobile', '$Tech_Product1', '$Tech_Product2', '$Tech_Product3', '$Tech_Product4', '$Message1')";
 
+    $sql = "INSERT INTO Pre-sales1 (Fname, Lname, Email, Mobile, Tech_Product1, Tech_Product2, Tech_Product3, Tech_Product4, Message1)
+            VALUES ('$Fname', '$Lname', '$Email', '$Mobile', '$Tech_Product1', '$Tech_Product2', '$Tech_Product3', '$Tech_Product4', '$Message1')";
+    echo $sql;
     // Execute the query and return a message
     if (!$result = $con->query($sql)) {
         die('Error occurred [' . $con->error . ']');
