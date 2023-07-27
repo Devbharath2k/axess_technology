@@ -23,12 +23,4 @@ function formatValue(value) {
 
 
 
-// // Get the element by its ID
-// var element = document.getElementById("your-element-id");
-
-// // Set the minimum and maximum height
-// element.style.minHeight = "200px";
-// element.style.maxHeight = "500px";
-
-
 
