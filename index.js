@@ -21,7 +21,6 @@ owl.owlCarousel({
         }
     }
 });
-
 // setTimeout(() => {
 //     // Code to be executed after the timeout
 //     // For example, you can hide the technology section

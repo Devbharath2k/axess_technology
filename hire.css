@@ -1,0 +1,27 @@
+    * {
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+        text-decoration: none;
+        list-style: none;
+        text-decoration: none !important;
+    }
+
+    #navber-icons {
+        color: goldenrod !important;
+    }
+
+    #navber-icons:hover {
+        border: none !important;
+      }
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+         color: none !important;
+        background-color: none !important;
+    }
+    #pills-tab .nav-pills .nav-link.active{
+        background-color: unset !important;
+        font-size: 45px;
+    }
+ 
+    #myTab .nav-item .nav-tabs button .nav-link.active{
+        border-color: unset !important;
+    }

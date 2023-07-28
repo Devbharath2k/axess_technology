@@ -58,8 +58,8 @@ nav.navbar {
     height: 100%;
 }
 
-.dropdown:hover>.dropdown-menu,
-.dropdown:focus>.dropdown-menu {
+ .dropdown:hover:not(.notdrop)>.dropdown-menu,
+.dropdown:focus:not(.notdrop)>.dropdown-menu {
     display: flex;
     width: 65%;
     margin-left: auto;
@@ -68,7 +68,8 @@ nav.navbar {
     overflow: break-word;
     align-items: center;
     justify-content: center;
-}
+}  
+
 
 .dropdown-menu ul li {
     display: block;
