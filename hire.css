@@ -25,3 +25,8 @@
     #myTab .nav-item .nav-tabs button .nav-link.active{
         border-color: unset !important;
     }
+
+    button#pills-skills-tab {
+        color: var(--bs-nav-link-hover-color);
+        background: white;
+    }
