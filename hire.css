@@ -17,6 +17,7 @@
          color: none !important;
         background-color: none !important;
     }
+
     #pills-tab .nav-pills .nav-link.active{
         background-color: unset !important;
         font-size: 45px;
@@ -26,10 +27,11 @@
         border-color: unset !important;
     }
 
-    button#pills-skills-tab {
+ 
+    /* button.nav-link.active {
         color: var(--bs-nav-link-hover-color);
-        background: white;
-    }
+        background: white !important;
+    }  */
 
         #employee-profile ::-webkit-scrollbar {
         width: 5px;
@@ -47,3 +49,15 @@
       #employee-profile  ::-webkit-scrollbar-thumb:hover {
         background: #555;
       }
+
+
+      .nav-link {
+        border-bottom: 2px solid transparent;
+        color: #000; /* Default text color */
+    }
+
+    .nav-pills button.nav-link.active {
+        border-bottom-color:violet !important; /* Change to the desired border color when active */
+        color: #007bff !important; /* Change to the desired text color when active */
+        background-color: transparent !important;
+    }

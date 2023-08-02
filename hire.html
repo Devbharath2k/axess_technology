@@ -24,85 +24,104 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 
-<body>
-
-    <style>
-        .nav-pills .nav-link.active,
-        .nav-pills .show>.nav-link {
-            background-color: #f8f8f8 !important;
-            color: var(--bs-nav-pills-link-active-bg);
-        }
-
-        .nav-tabs .nav-link {
-            all: unset;
-            padding: 12px 22px !important;
-            background-color: #f8f8f8 !important;
-        }
-    </style>
-
+<body class="">
     <div class="container-fluid" style="background-color: #f8f8f8;">
         <div class="mt-1">
-            <p></p>
-            <h4 class="pt-3 py-3">Hiring Developers <span class="multiple-text fs-3 text-primary">
-                </span> </h4>
+            <h6 class="pt-3 py-3">Hiring Developers <span class="multiple-text fs-3 text-primary">
+                </span> </h6>
         </div>
-        <ul class="nav nav-pills mb-3 mt-3  mb-5 shadow" id="pills-tab" role="tablist">
-            <li class="nav-item" role="presentation" >
-                <button class="nav-link active mx-3" id="pills-skills-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-skills"  type="button" role="tab" aria-controls="pills-skills" 
+        <ul class="nav nav-pills mb-3 mt-3 mb-5 shadow d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-skills-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-skills" type="button" role="tab" aria-controls="pills-skills"
                     aria-selected="true">Base on Skills</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link mx-3" id="pills-profile-tab" data-bs-toggle="pill"
-                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
-                    aria-selected="false">Based on role</button>
+                <button class="nav-link " id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Based on role</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link mx-3" id="pills-career-tab" data-bs-toggle="pill" data-bs-target="#pills-career"
+                <button class="nav-link" id="pills-career-tab" data-bs-toggle="pill" data-bs-target="#pills-career"
                     type="button" role="tab" aria-controls="pills-career" aria-selected="false">Based on career
                     trajectory</button>
             </li>
+
         </ul>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-skills" role="tabpanel" aria-labelledby="pills-skills-tab"
                 tabindex="0">
-                <div class="container ">
-
+                <div class="container">
                     <div class="row" id="employee-profile">
                         <div class="col-md-6">
-                            <ul class="nav nav-tabs border-0" id="myTab" role="tablist">
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link active mx-1 shadow" id="react-tab" data-bs-toggle="tab"
+                            <ul class="nav nav-tabs border-0 mx-md-auto justify-content-evenly mt-3" id="myTab"
+                                role="tablist">
+                                <li class="nav-item " role="presentation">
+                                    <button class="nav-link mb-2 active shadow " id="react-tab" data-bs-toggle="tab"
                                         data-bs-target="#react-tab-pane" type="button" role="tab"
-                                        aria-controls="react-tab-pane" aria-selected="true"><i class="fab fa-react me-2 fs-5" style="color: #17a2e8;"></i>Reactjs</button>
+                                        aria-controls="react-tab-pane" aria-selected="true"><i
+                                            class="fab fa-react me-2 fs-5" style="color: #17a2e8;"></i>Reactjs</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-1 shadow" id="Nodejs-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Nodejs-tab-pane" type="button" role="tab"
-                                        aria-controls="Nodejs-tab-pane" aria-selected="false"><i class="fa-brands fa-node-js me-2 fs-5" style="color: #168b0e;"></i>Nodejs</button>
+                                    <button class="nav-link mb-2 justify-content-between  shadow" id="Nodejs-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Nodejs-tab-pane" type="button" role="tab"
+                                        aria-controls="Nodejs-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-node-js me-2 fs-5"
+                                            style="color: #168b0e;"></i>Nodejs</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-1 shadow" id="Python-tab" data-bs-toggle="tab"
-                                        data-bs-target="#Python-tab-pane" type="button" role="tab"
-                                        aria-controls="Python-tab-pane" aria-selected="false"><i class="fa-brands fa-python me-1 fs-5" style="color: #214e9c;"></i>Python</button>
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Python-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Python-tab-pane" type="button" role="tab"
+                                        aria-controls="Python-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-python me-1 fs-5"
+                                            style="color: #214e9c;"></i>Python</button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link mx-1 shadow " id="AWS-tab" data-bs-toggle="tab"
-                                        data-bs-target="#AWS-tab-pane" type="button" role="tab"
-                                        aria-controls="AWS-tab-pane" aria-selected="false"> <i class="fa-brands fa-aws me-2 fs-5" style="color: #f09c0a;"></i>
+                                <li class="nav-item " role="presentation">
+                                    <button class="nav-link mb-2 justify-content-between shadow " id="AWS-tab"
+                                        data-bs-toggle="tab" data-bs-target="#AWS-tab-pane" type="button" role="tab"
+                                        aria-controls="AWS-tab-pane" aria-selected="false"> <i
+                                            class="fa-brands fa-aws me-2 fs-5" style="color: #f09c0a;"></i>
                                         AWS</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Angular-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Angular-tab-pane" type="button" role="tab"
+                                        aria-controls="Angular" aria-selected="false"><i
+                                            class="fa-brands fa-angular me-2 fs-5"
+                                            style="color: #c02626;"></i>Angular</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Native-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Native-tab-pane" type="button" role="tab"
+                                        aria-controls="Native-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-react me-1 fs-5 mx-2"
+                                            style="color: #17a2e8;"></i>React-Native</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="PHP-tab"
+                                        data-bs-toggle="tab" data-bs-target="#PHP-tab-pane" type="button" role="tab"
+                                        aria-controls="PHP-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-php me-1 fs-5 mx-2"
+                                            style="color: #1f2633"></i>PHP</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Android-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Android-tab-pane" type="button" role="tab"
+                                        aria-controls="Android-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-android me-1 fs-5 mx-2"
+                                            style="color: #5fae15"></i>Android</button>
                                 </li>
                             </ul>
                         </div>
                         <div class="col-md-6" style="max-height: 250px; overflow-y: scroll;">
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active" id="react-tab-pane" role="tabpanel"
+                                <div class="tab-pane fade show active mt-3" id="react-tab-pane" role="tabpanel"
                                     aria-labelledby="react-tab" tabindex="0">
-                                    <div class="card">
+                                    <div class="card  scrollbar-ripe-malinka">
                                         <div class="card-body">
                                             <p class="fw-semibold">
                                                 Nivtha Rajender <span class="fw-lighter"> React.js Developer</span>
-                                            <p>Nivtha is a software architect with 20 years of experience in building web
+                                            <p>Nivtha is a software architect with 20 years of experience in
+                                                building web
                                                 application systems and single-page applications.</p>
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -113,8 +132,8 @@
                                                     <p class="fw-semibold">Also worked with</p>
                                                     <div class="d-flex ">
                                                         <p class="shadow-sm mx-2 text-primary">Spring</p>
-                                                          <p class="shadow-sm mx-2">PostgreSQL</p>  
-                                                           <p class="shadow-sm mx-1">JavaScript</p> 
+                                                        <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                        <p class="shadow-sm mx-1">JavaScript</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -124,7 +143,8 @@
                                         <div class="card-body">
                                             <p class="fw-semibold">
                                                 selvi <span class="fw-lighter"> React.js Developer</span>
-                                            <p>Jorge is a software architect with 20 years of experience in building web
+                                            <p>Jorge is a software architect with 20 years of experience in building
+                                                web
                                                 application systems and single-page applications.</p>
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -135,8 +155,8 @@
                                                     <p class="fw-semibold">Also worked with</p>
                                                     <div class="d-flex ">
                                                         <p class="shadow-sm mx-2 text-primary">Spring</p>
-                                                          <p class="shadow-sm mx-2">PostgreSQL</p>  
-                                                           <p class="shadow-sm mx-1">JavaScript</p> 
+                                                        <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                        <p class="shadow-sm mx-1">JavaScript</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -146,7 +166,8 @@
                                         <div class="card-body">
                                             <p class="fw-semibold">
                                                 selvi <span class="fw-lighter"> React.js Developer</span>
-                                            <p>Jorge is a software architect with 20 years of experience in building web
+                                            <p>Jorge is a software architect with 20 years of experience in building
+                                                web
                                                 application systems and single-page applications.</p>
                                             <div class="row">
                                                 <div class="col-md-6">
@@ -157,8 +178,8 @@
                                                     <p class="fw-semibold">Also worked with</p>
                                                     <div class="d-flex ">
                                                         <p class="shadow-sm mx-2 text-primary">Spring</p>
-                                                          <p class="shadow-sm mx-2">PostgreSQL</p>  
-                                                           <p class="shadow-sm mx-1">JavaScript</p> 
+                                                        <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                        <p class="shadow-sm mx-1">JavaScript</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -181,30 +202,104 @@
                                     tabindex="0">
                                     shiva
                                 </div>
-
-
+                                <div class="tab-pane fade" id="Angular-tab-pane" role="tabpanel"
+                                    aria-labelledby="Angular-tab" tabindex="0">
+                                    kumar
+                                </div>
+                                <div class="tab-pane fade" id="Native-tab-pane" role="tabpanel"
+                                    aria-labelledby="Native-tab" tabindex="0">
+                                    Rahul
+                                </div>
+                                <div class="tab-pane fade" id="Native-tab-pane" role="tabpanel"
+                                    aria-labelledby="Native-tab" tabindex="0">
+                                    surprisingly
+                                </div>
+                                <div class="tab-pane fade" id="PHP-tab-pane" role="tabpanel" aria-labelledby="PHP-tab"
+                                    tabindex="0">
+                                    php
+                                </div>
+                                <div class="tab-pane fade" id="Android-tab-pane" role="tabpanel"
+                                    aria-labelledby="Android-tab" tabindex="0">
+                                    Android
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
             </div>
-            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, provident error.</div>
-            <div class="tab-pane fade" id="pills-career" role="tabpanel" aria-labelledby="pills-career-tab"
-                tabindex="0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, consectetur suscipit!
+            <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active shadow" id="pills-Fullstackdeveloper-tab"
+                                    data-bs-toggle="pill" data-bs-target="#pills-Fullstackdeveloper" type="button"
+                                    role="tab" aria-controls="pills-Fullstackdeveloper"
+                                    aria-selected="true">Full-Stack-developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Backend" type="button" role="tab"
+                                    aria-controls="pills-Backend" aria-selected="false">Backend-developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-Front-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-Front" type="button" role="tab" aria-controls="pills-Front"
+                                    aria-selected="false">Frontend-devloper</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile"
+                                    aria-selected="false">mobile-devloper</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-system-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-system" type="button" role="tab" aria-controls="pills-system"
+                                    aria-selected="false">system-admin</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">.
+                                <p>lorem selvi</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <p>surder</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                                aria-labelledby="pills-contact-tab" tabindex="0">
+                                <p>bharath</p>
+                            </div>
+                            <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                                aria-labelledby="pills-disabled-tab" tabindex="0">.
+                                sell
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-disabled" role="tabpanel"
+                            aria-labelledby="pills-disabled-tab" tabindex="0">
+                            <p>nivitha</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="tab-pane fade show active" id="pills-career" role="tabpanel" aria-labelledby="pills-career-tab"
+            tabindex="0">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dicta reprehenderit.</p>
+                </div>
+                <div class="col-md-6">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -232,6 +327,20 @@
             });
         });
     </script>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', function () {
+                // Remove 'active' class from all nav-links
+                navLinks.forEach(link => link.classList.remove('active'));
+
+                // Add 'active' class to the clicked nav-link
+                this.classList.add('active');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
