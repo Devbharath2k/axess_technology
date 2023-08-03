@@ -57,7 +57,7 @@
     }
 
     .nav-pills button.nav-link.active {
-        border-bottom-color:violet !important; /* Change to the desired border color when active */
+        border-bottom-color:orange  !important; /* Change to the desired border color when active */
         color: #007bff !important; /* Change to the desired text color when active */
         background-color: transparent !important;
     }
