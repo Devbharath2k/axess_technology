@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,14 +55,16 @@
                 tabindex="0">
                 <div class="container-fluid ">
                     <div class="row" id="employee-profile">
-                        <div class="col-md-6">
+                        <div class="col-md-6 ">
                             <ul class="nav nav-tabs border-0 mx-md-auto justify-content-evenly mt-3" id="myTab"
                                 role="tablist">
                                 <li class="nav-item " role="presentation">
                                     <button class="nav-link mb-2 active shadow " id="react-tab" data-bs-toggle="tab"
                                         data-bs-target="#react-tab-pane" type="button" role="tab"
-                                        aria-controls="react-tab-pane" aria-selected="true"><i
-                                            class="fab fa-react me-2 fs-5" style="color: #17a2e8;"></i>Reactjs</button>
+                                        aria-controls="react-tab-pane" aria-selected="true">
+                                        <i class="fab fa-react me-2 fs-5" style="color: #17a2e8;"></i>
+                                        Reactjs
+                                    </button>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <button class="nav-link mb-2 justify-content-between  shadow" id="Nodejs-tab"
@@ -109,17 +115,31 @@
                                             class="fa-brands fa-android me-1 fs-5 mx-2"
                                             style="color: #5fae15"></i>Android</button>
                                 </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Android-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Android-tab-pane" type="button" role="tab"
+                                        aria-controls="Android-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-android me-1 fs-5 mx-2"
+                                            style="color: #5fae15"></i>Android</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link  mb-2 justify-content-between shadow" id="Android-tab"
+                                        data-bs-toggle="tab" data-bs-target="#Android-tab-pane" type="button" role="tab"
+                                        aria-controls="Android-tab-pane" aria-selected="false"><i
+                                            class="fa-brands fa-android me-1 fs-5 mx-2"
+                                            style="color: #5fae15"></i>Android</button>
+                                </li>
                             </ul>
                         </div>
-                        <div class="col-md-6" style="max-height: 250px; overflow-y: scroll;">
+                        <div class="col-md-6" style="margin-top: -38px; min-height: 800px scroll;">
                             <div class="tab-content" id="myTabContent">
-                                <div class="tab-pane fade show active mt-3" id="react-tab-pane" role="tabpanel"
+                                <div class="tab-pane fade show active mt-5" id="react-tab-pane" role="tabpanel"
                                     aria-labelledby="react-tab" tabindex="0">
-                                    <div class="card  scrollbar-ripe-malinka">
+                                    <div class="card  scrollbar-ripe-malinka" id="cards" style="margin-top: 20px;">
                                         <div class="card-body">
                                             <p class="fw-semibold">
-                                                Nivtha Rajender <span class="fw-lighter"> React.js Developer</span>
-                                            <p>Nivtha is a software architect with 20 years of experience in
+                                                Nivetha Rajender <span class="fw-lighter"> React.js Developer</span>
+                                            <p>Nivetha is a software architect with 20 years of experience in
                                                 building web
                                                 application systems and single-page applications.</p>
                                             <div class="row">
@@ -226,29 +246,234 @@
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade show" id="pills-profile" role="tabpanel"
-                aria-labelledby="pills-profile-tab" tabindex="0">
+            <div class="tab-pane fade show" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
                 <div class="row">
                     <div class="col-md-6">
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dicta reprehenderit.</p>
+                        <ul class="nav nav-tabs border-0 mx-md-auto justify-content-evenly " id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active shadow mb-2 justify-content-between" id="Fullstack-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Fullstack-tab-pane" type="button" role="tab"
+                                    aria-controls="Fullstack-tab-pane" aria-selected="true">Fullstack-Developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Backend-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Backend-tab-pane" type="button" role="tab"
+                                    aria-controls="Backend-tab-pane" aria-selected="false">Backend-Developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Frontend-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Frontend-tab-pane" type="button" role="tab"
+                                    aria-controls="Frontend-tab-pane" aria-selected="false">Frontend-Developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Mobile-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Mobile-tab-pane" type="button" role="tab"
+                                    aria-controls="Mobile-tab-pane" aria-selected="false">Mobile-Developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="App-tab"
+                                    data-bs-toggle="tab" data-bs-target="#App-tab-pane" type="button" role="tab"
+                                    aria-controls="App-tab-pane" aria-selected="false">App-Developer</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Devops-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Devops-tab-pane" type="button" role="tab"
+                                    aria-controls="Devops-tab-pane" aria-selected="false">AWS-Devops</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Software-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Software-tab-pane" type="button" role="tab"
+                                    aria-controls="Software-tab-pane" aria-selected="false">Software-Testing</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link shadow mb-2 justify-content-between" id="Software-tab"
+                                    data-bs-toggle="tab" data-bs-target="#Software-tab-pane" type="button" role="tab"
+                                    aria-controls="Software-tab-pane"
+                                    aria-selected="false">System-administrator</button>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="col-md-6" style="margin-top: -13px;">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Fullstack-tab-pane" role="tabpanel"
+                                aria-labelledby="Fullstack-tab" tabindex="0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="text-start">Full-Stack Developer</p>
+                                            <p class="mt-2">Nivetha Is A Software Architect With 20 Years Of Experience
+                                                In Building Web Application Systems And Single-Page Applications.</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>React.js Node.js Boostrap Tailwind css Docker</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">Spring</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mt-2">
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="text-start">Full-Stack Developer</p>
+                                            <p class="mt-2">Bharath Is A Software Architect With 20 Years Of Experience
+                                                In Building Web Application Systems And Single-Page Applications.</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>React.js Node.js Boostrap Tailwind css Docker</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">Spring</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mt-2">
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="text-start">Full-Stack Developer</p>
+                                            <p class="mt-2">Dinesh Is A Software Architect With 20 Years Of Experience
+                                                In Building Web Application Systems And Single-Page Applications.</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>React.js Node.js Boostrap Tailwind css Docker SQL</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">Spring</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card mt-2">
+                                    <div class="card-body">
+                                        <div>
+                                            <p class="text-start">Full-Stack Developer</p>
+                                            <p class="mt-2">Nivetha Is A Software Architect With 20 Years Of Experience
+                                                In Building Web Application Systems And Single-Page Applications.</p>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>React.js Node.js Boostrap Tailwind css Docker SQL</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">Spring</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Backend-tab-pane" role="tabpanel"
+                                aria-labelledby="Backend-tab" tabindex="0">
+                                <div class="card  scrollbar-ripe-malinka" id="cards" style="margin-top: 20px;">
+                                    <div class="card-body">
+                                        <p class="fw-semibold">
+                                            Ajith Kumar <span class="fw-lighter"> React.js Developer</span>
+                                        <p>Ajith Kumar is a software architect with 5 years of experience in
+                                            building web
+                                            application systems and single-page applications.</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>Pyhton Django AWS Flask Docker</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">SQL</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card  scrollbar-ripe-malinka" id="cards" style="margin-top: 20px;">
+                                    <div class="card-body">
+                                        <p class="fw-semibold">
+                                            Nivtha Rajender <span class="fw-lighter"> React.js Developer</span>
+                                        <p>Nivtha is a software architect with 20 years of experience in
+                                            building web
+                                            application systems and single-page applications.</p>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <p class="mt-1">Expert in</p>
+                                                <p>React.js Node.js AWS Docker Kubernetes</p>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <p class="fw-semibold">Also worked with</p>
+                                                <div class="d-flex ">
+                                                    <p class="shadow-sm mx-2 text-primary">Spring</p>
+                                                    <p class="shadow-sm mx-2">PostgreSQL</p>
+                                                    <p class="shadow-sm mx-1">JavaScript</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="Frontend-tab-pane" role="tabpanel"
+                                aria-labelledby="Frontend-tab" tabindex="0">
+                                <p>welc</p>
+                            </div>
+                            <div class="tab-pane fade" id="Mobile-tab-pane" role="tabpanel" aria-labelledby="Mobile-tab"
+                                tabindex="0">
+                                <p>welcon</p>
+                            </div>
+                            <div class="tab-pane fade" id="App-tab-pane" role="tabpanel" aria-labelledby="App-tab"
+                                tabindex="0">
+                                <p>welcome dudbe</p>
+                            </div>
+                            <div class="tab-pane fade" id="Software-tab-pane" role="tabpanel"
+                                aria-labelledby="Software-tab" tabindex="0">
+                                <p>welcoming</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade show" id="pills-career" role="tabpanel" aria-labelledby="pills-career-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dicta reprehenderit.
+                        </p>
                     </div>
                     <div class="col-md-6">
-                        <p>Lorem, ipsum.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur hema</p>
                     </div>
                 </div>
             </div>
-            <div class="tab-pane fade show" id="pills-career" role="tabpanel"
-            aria-labelledby="pills-career-tab" tabindex="0">
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui, dicta reprehenderit.</p>
-                </div>
-                <div class="col-md-6">
-                    <p>Lorem ipsum dolor sit amet, consectetur hema</p>
-                </div>
-            </div>
-        </div>
-            
+
 
         </div>
     </div>
@@ -291,6 +516,9 @@
             });
         });
     </script>
+
+
+
 
 </body>
 

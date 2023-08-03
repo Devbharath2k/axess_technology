@@ -61,3 +61,15 @@
         color: #007bff !important; /* Change to the desired text color when active */
         background-color: transparent !important;
     }
+
+/* Remove the bouncing effect */
+.nav-link:focus,
+.nav-link:active {
+  outline: none;
+}
+
+/* Add border on hover */
+.nav-link:hover {
+  /* border: 1px solid #ccc; Change the color as per your preference */
+  border-radius: 5px; /* Optional: Add border radius to soften the edges */
+}
