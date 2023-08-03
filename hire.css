@@ -73,3 +73,8 @@
   /* border: 1px solid #ccc; Change the color as per your preference */
   border-radius: 5px; /* Optional: Add border radius to soften the edges */
 }
+
+#sunny ul li i{
+  font-size: 13px !important;
+}
+
