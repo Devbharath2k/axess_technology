@@ -1,0 +1,36 @@
+.off-drop-btn p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: .3s;
+}
+
+.off-drop-btn.active i {
+    transform: rotate(180deg) !important;
+}
+
+.off-drop-btn i {
+    transition: .3s;
+}
+
+.off-drop-btn.active i {
+    transform: rotate(90deg);
+}
+
+.off-drop-btn i {
+    transition: .3s;
+}
+
+.off-drop-menus {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    padding: 17px;
+}
+
+.off-drop-menus a:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .mini-nav{
+        width: 70% !important;
+    }
+}
