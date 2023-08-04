@@ -33,22 +33,7 @@
         background: white !important;
     }  */
 
-        #employee-profile ::-webkit-scrollbar {
-        width: 5px;
-      }
-      #employee-profile  ::-webkit-scrollbar-track {
-        background: #f1f1f1;
-      }
-      
-      /* Handle */
-      #employee-profile  ::-webkit-scrollbar-thumb {
-        background: #888;
-      }
-      
-      /* Handle on hover */
-      #employee-profile  ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-      }
+    
 
 
       .nav-link {
