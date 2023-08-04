@@ -2,6 +2,7 @@ let navbar = $(`
 
 
 <!-- navber -->
+<link rel="stylesheet" href="mininav.css">
 <nav class="navbar navbar-expand-lg navbar-white bg-body-dark position-sticky top-0 bg-white start-0 w-100">
     <a href="index.html" id="navber-icons" class="mx-2"><img src="download/Capture.PNG" style="color: goldenrod;"
             width="40px" height="30px" class="mb-2" alt="">
@@ -184,32 +185,105 @@ let navbar = $(`
     </div>
 </nav>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-    <div class="offcanvas-header border-0">
-        <!-- Header content here -->
+<div class="offcanvas offcanvas-start mini-nav" tabindex="-1" id="offcanvasExample"
+aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas-header border-0">
+    <!-- Header content here -->
+</div>
+<div class="offcanvas-body border-0 ho">
+    <div class="navbar" id="main_nav">
+        <ul class="navbar-nav w-100">
+            <a href="index.html" id="navber-icons" class="mb-5"><img src="download/Capture.PNG" style="color: goldenrod;"
+                width="40px" height="30px" class="mb-2" alt="">
+            Axess-Technology</a>
+            <!-- Dropdown button without data-bs-toggle -->
+            <div>
+                <div class="off-drop-btn">
+                    <div class="d-flex justify-content-between align-items-center mt-3 mb-3">
+                        <p>Company</p>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                </div>
+                <div class="off-drop-menus">
+                    <div class="d-flex flex-column">
+                        <a href="about.html">Profile</a>
+                        <a href="#">Partner-Ships</a>
+                        <a href="#">Blogs</a>
+                        <a href="#">Carrer</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="off-drop-btn">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <p>Service</p>
+                        <i class="ri-arrow-down-s-line"></i>
+                    </div>
+                </div>
+                <div class="off-drop-menus">
+                    <div class="d-flex flex-column">
+                        <a href="#">UI/Ux Design</a>
+                        <a href="webdevelopment.html">Web Development</a>
+                        <a href="">Software-Testing</a>
+                        <a href="">database-developer</a>
+                        <a href="">devops</a>
+                        <a href="">System-admin</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="off-drop-btn">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="index.html#industies" class="text-dark mt-3 mb-2 fs-5">Industies</a>
+                        <!-- <i class="ri-arrow-down-s-line"></i> -->
+                    </div>
+                </div>
+               
+            </div>
+            <div>
+                <div class="off-drop-btn">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="index.html#industies" class="text-dark mt-3 mb-2 fs-5">Careers</a>
+                        <!-- <i class="ri-arrow-down-s-line"></i> -->
+                    </div>
+                </div>
+               
+            </div>
+            <div>
+                <div class="off-drop-btn">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a class="text-dark mt-3 mb-2 fs-5" href="hire.html">Hire Talent</a>
+                        <!-- <i class="ri-arrow-down-s-line"></i> -->
+                    </div>
+                </div>
+                <!-- <div class="off-drop-menus">
+                    <div class="d-flex flex-column">
+                        <a href="#">UI/Ux Design</a>
+                        <a href="webdevelopment.html">Web Development</a>
+                        <a href="">Software-Testing</a>
+                        <a href="">database-developer</a>
+                        <a href="">devops</a>
+                        <a href="">System-admin</a>
+                    </div>
+                </div> -->
+            </div>
+
+            <div class="off-drop-btn">
+                <div class="d-flex justify-content-between align-items-center">
+                    <a href="contact.html" class="text-dark mt-3 mb-2 fs-5">Contact</a>
+                    <!-- <i class="ri-arrow-down-s-line"></i> -->
+                </div>
+            </div>
+            
+            <!-- Other menu items here -->
+        </ul>
     </div>
-    <div class="offcanvas-body border-0 ho">
-        <div class="navbar" id="main_nav">
-            <ul class="navbar-nav mx-auto px-6 text-center">
-                <!-- Dropdown button without data-bs-toggle -->
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown button
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                  </div>
-                
-                <!-- Other menu items here -->
-            </ul>
-        </div>
-    </div>
 </div>
 </div>
-</div>
+
+
+
 `);
 
 $("body").prepend(navbar);
@@ -220,3 +294,16 @@ $(".megamenu .big-head").prepend(addIcon);
 $("i.ri-arrow-right-line")
   .parent("li")
   .addClass("dropdown-list d-flex align-items-center");
+
+  $(document).ready(function () {
+    // Add click event handler to accordion headers
+    $(".off-drop-btn").click(function () {
+        // Toggle the content of the clicked accordion item
+        $(this).next(".off-drop-menus").toggle();
+        $(this).toggleClass('active');
+
+        // Close other accordion items except the clicked one
+        $(".off-drop-btn").not($(this)).removeClass('active')
+        $(".off-drop-menus").not($(this).next()).hide();
+    });
+});
