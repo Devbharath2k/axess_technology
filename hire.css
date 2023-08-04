@@ -1,65 +1,141 @@
     * {
-        font-family: 'Poppins', sans-serif;
-        text-transform: capitalize;
-        text-decoration: none;
-        list-style: none;
-        text-decoration: none !important;
+      font-family: 'Poppins', sans-serif;
+      text-transform: capitalize;
+      text-decoration: none;
+      list-style: none;
+      text-decoration: none !important;
     }
+    #navber-icons:hover {
+      border: none !important;
+  }
+  
+  /* navber */
+  nav.navbar {
+      z-index: 1000;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+  }
 
     #navber-icons {
-        color: goldenrod !important;
+      color: goldenrod !important;
     }
 
     #navber-icons:hover {
-        border: none !important;
-      }
-      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-         color: none !important;
-        background-color: none !important;
+      border: none !important;
     }
 
-    #pills-tab .nav-pills .nav-link.active{
-        background-color: unset !important;
-        font-size: 45px;
-    }
- 
-    #myTab .nav-item .nav-tabs button .nav-link.active{
-        border-color: unset !important;
+    .dropdown:hover:not(.notdrop)>.dropdown-menu,
+    .dropdown:focus:not(.notdrop)>.dropdown-menu {
+        display: flex;
+        width: 65%;
+        margin-left: auto;
+        position: absolute;
+        justify-content: center;
+        overflow: break-word;
+        align-items: center;
+        justify-content: center;
+    }  
+    
+    
+    .dropdown-menu ul li {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        padding: 10px 0;
+        margin: 0;
+        overflow: hidden;
+        border-radius: 1px 12px;
+        text-align: left;
     }
 
- 
+    .px-6 {
+      padding-right: 22px !important;
+      padding: 0 22px !important;
+  }
+  
+  .navbar a:hover:not(.navbar-brand),
+  footer a:hover {
+      color: goldenrod;
+      text-decoration: none;
+      /* border-bottom: 1px solid black !important; */
+  }
+  
+  .navbar .has-megamenu {
+      position: static !important;
+  }
+  
+  .navbar .megamenu {
+      left: 0;
+      right: 0;
+      width: 100%;
+      margin-top: 0;
+  }
+
+  .dropdown-menu {
+    border: none !important;
+}
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: none !important;
+      background-color: none !important;
+    }
+
+    #pills-tab .nav-pills .nav-link.active {
+      background-color: unset !important;
+      font-size: 45px;
+    }
+
+    #myTab .nav-item .nav-tabs button .nav-link.active {
+      border-color: unset !important;
+    }
+
+
     /* button.nav-link.active {
         color: var(--bs-nav-link-hover-color);
         background: white !important;
     }  */
 
-    
 
 
-      .nav-link {
-        border-bottom: 2px solid transparent;
-        color: #000; /* Default text color */
+
+    .nav-link {
+      border-bottom: 2px solid transparent;
+      color: #000;
+      /* Default text color */
     }
 
     .nav-pills button.nav-link.active {
-        border-bottom-color:orange  !important; /* Change to the desired border color when active */
-        color: #007bff !important; /* Change to the desired text color when active */
-        background-color: transparent !important;
+      border-bottom-color: orange !important;
+      /* Change to the desired border color when active */
+      color: #007bff !important;
+      /* Change to the desired text color when active */
+      background-color: transparent !important;
     }
 
-/* Remove the bouncing effect */
-.nav-link:focus,
-.nav-link:active {
-  outline: none;
-}
+    /* Remove the bouncing effect */
+    .nav-link:focus,
+    .nav-link:active {
+      outline: none;
+    }
 
-/* Add border on hover */
-.nav-link:hover {
-  /* border: 1px solid #ccc; Change the color as per your preference */
-  border-radius: 5px; /* Optional: Add border radius to soften the edges */
-}
+    /* Add border on hover */
+    .nav-link:hover {
+      /* border: 1px solid #ccc; Change the color as per your preference */
+      border-radius: 5px;
+      /* Optional: Add border radius to soften the edges */
+    }
 
-#sunny ul li i{
-  font-size: 13px !important;
-}
 
+    @media(max-width: 991px) {
+
+      .navbar.fixed-top .navbar-collapse,
+      .navbar.sticky-top .navbar-collapse {
+          overflow-y: auto;
+          max-height: 90vh;
+          margin-top: 10px;
+      }
+  }

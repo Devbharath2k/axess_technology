@@ -1133,6 +1133,9 @@
                 loop: true
             });
         });
+        setTimeout(() => {
+            $('#auto').click();
+        }, 5000);
     </script>
     <script>
         const navLinks = document.querySelectorAll('.nav-link');
@@ -1146,7 +1149,14 @@
                 this.classList.add('active');
             });
         });
+
+        let addIcon = '<i class="ri-arrow-right-line me-2"></i>'
+$('.megamenu .big-head').prepend(addIcon);
+
+$('i.ri-arrow-right-line').parent('li').addClass('dropdown-list d-flex align-items-center')
     </script>
+
+    
 
 
 
