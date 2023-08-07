@@ -127,6 +127,16 @@ $('.blog-carousel').owlCarousel({
     }
 });
 
+var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+
 let addIcon = '<i class="ri-arrow-right-line me-2"></i>'
 $('.megamenu .big-head').prepend(addIcon);
 
