@@ -16,9 +16,11 @@
     display: inline-block;
     vertical-align: middle;
 }
+
 .center-icon i:hover {
-    color:goldenrod !important;
+    color: goldenrod !important;
 }
+
 .center-icon i {
     vertical-align: middle;
 }
@@ -54,10 +56,9 @@ nav.navbar {
     position: fixed;
     top: 0;
     left: 0;
-   
 }
 
- .dropdown:hover:not(.notdrop)>.dropdown-menu,
+.dropdown:hover:not(.notdrop)>.dropdown-menu,
 .dropdown:focus:not(.notdrop)>.dropdown-menu {
     display: flex;
     width: 65%;
@@ -67,7 +68,7 @@ nav.navbar {
     overflow: break-word;
     align-items: center;
     justify-content: center;
-}  
+}
 
 
 .dropdown-menu ul li {

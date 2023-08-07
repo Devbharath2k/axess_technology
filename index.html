@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="mininav.css">
     <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
@@ -23,7 +25,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
 
     <!-- mini nav css -->
-    <link rel="stylesheet" href="mininav.css">
+   
 
 </head>
 
@@ -72,7 +74,7 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto"></div>
-                <ul class="navbar-nav ms-auto px-6 text-center">
+                <ul class="navbar-nav ms-auto px-6 text-center fw-semibold text-white">
                     <li class="nav-item dropdown has-megamenu">
                         <a class="nav-link px-3 " href="#">company</a>
                         <div class="dropdown-menu megamenu" role="menu">
@@ -1348,15 +1350,7 @@
                 $(".off-drop-menus").not($(this).next()).hide();
             });
         });
-        var nav = document.querySelector('nav');
-
-        window.addEventListener('scroll', function () {
-            if (window.pageYOffset > 100) {
-                nav.classList.add('bg-dark', 'shadow');
-            } else {
-                nav.classList.remove('bg-dark', 'shadow');
-            }
-        });
+        
 
 
     </script>
