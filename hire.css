@@ -162,3 +162,12 @@
         margin-top: 10px;
       }
     }
+
+    @media (max-width: 576px) {
+      .nav-tabs .nav-link {
+        padding: 0.5rem 1rem;
+        font-size: 12px;
+      }
+
+      /* Add more custom styles as needed for smaller screens */
+    }
