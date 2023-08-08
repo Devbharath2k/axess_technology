@@ -16,6 +16,14 @@
 #navber-icons:hover{
     border: none !important;
 }
+
+nav li a{
+    color: black !important;
+}
+
+
+
+
 #icons1 {
 
     color:blue !important;
