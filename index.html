@@ -58,12 +58,11 @@
     </div> -->
 
     <!-- navber -->
-
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
-        <div class="container-fluid">
-            <a href="index.html" id="navber-icons" style="color: goldenrod; opacity: 0.8;" width="50px" height="30px"
-                class="mx-2"><img src="download/Capture.PNG" width="40px" height="30px" class="mb-2" alt="">
-                Axess-Technology</a>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+          <div class="container-fluid">
+            <a href="index.html" id="navber-icons" style="color: goldenrod; opacity: 0.8;" width="50px" height="30px" class="mx-2"><img src="download/Capture.PNG"
+                width="40px" height="30px" class="mb-2" alt="">
+            Axess-Technology</a>
             <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -71,10 +70,10 @@
                 data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+    
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="mx-auto"></div>
-                <ul class="navbar-nav ms-auto px-6 text-center fw-semibold text-white">
+                <ul class="navbar-nav ms-auto px-6 text-center">
                     <li class="nav-item dropdown has-megamenu">
                         <a class="nav-link px-3 " href="#">company</a>
                         <div class="dropdown-menu megamenu" role="menu">
@@ -237,8 +236,8 @@
                     </li><!-- navber-end -->
                 </ul>
             </div>
-        </div>
-    </nav>
+          </div>
+        </nav>
 
     <div class="offcanvas offcanvas-start mini-nav" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
@@ -349,7 +348,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active c-item">
-                <img src="download/front.png" class="d-block w-100 c-img" height="350px" alt="...">
+                <img src="download/font" class="d-block w-100 c-img" height="350px" alt="...">
                 <div class="carousel-caption top-0 mt-5" data-aos="zoom-in" data-aos-duration="700">
                     <p class="fs-5 mt-5 text-uppercase">Firist responsive sider</p>
                     <h6 class="display-6 fs-3 fw-light mt-5">Some representative placeholder content for the first
@@ -1296,6 +1295,7 @@
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- aos cdn -->
+    
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- index.js -->
     <script src="index.js"></script>
@@ -1350,7 +1350,15 @@
                 $(".off-drop-menus").not($(this).next()).hide();
             });
         });
-        
+        var nav = document.querySelector('nav');
+
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
 
 
     </script>
