@@ -1,30 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="world.css"> -->
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="index.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- bootstrap-cdn-script -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- font-cdn-link -->
+    <link rel="stylesheet" href="mininav.css">
+    <link rel="stylesheet" href="webdevelopment.css">
+    <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap-cdn-script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- aos cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- navbar css -->
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="mininav.css">
-
+    <!-- remix CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- mini nav css -->
 </head>
 
-<body class="overflow-x-hidden">
+<body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a href="index.html" id="navber-icons" style="color: goldenrod; opacity: 0.8;" width="50px" height="30px"
@@ -42,7 +45,7 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav ms-auto px-6 text-center fw-semibold text-dark" style="color:black">
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link px-3" style="color: rgb(152, 126, 126);" href="#">company</a>
+                        <a class="nav-link px-3" style="color:#ede6e7;" href="#">company</a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row">
                                 <div class="col-4">
@@ -55,7 +58,7 @@
                                                     <i class="ri-subtract-fill"></i>
                                                     <a href="about.html ">Blog</a>
                                                 </li>
-
+                                               
                                             </ul>
                                         </div>
                                     </ul>
@@ -78,31 +81,22 @@
                                         </div>
                                     </div>
                                     <h6 class="mt-3 fs-5">Axess Technology</h6>
-                                    <p class="align-items-center">Our passion lies in transforming challenges into
+                                    <p class="align-items-center mt-2 mb-2">Our passion lies in transforming challenges into
                                         opportunities, and ideas into functional, elegant software.
                                         <br>
-                                        <button class="btn btn-primary text-center">get quote</button>
+                                        <br>
+                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get quote</a></button>
+                                        
                                     </p>
                                 </div>
                             </div>
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4 big-shot" href="#service"
-                            style="color: rgb(152, 126, 126);">services</a>
+                        <a class="nav-link  px-4 big-shot" href="#service" style="color:#ede6e7;">services</a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row">
                                 <div class="col-4">
-                                    <div class="dropdown">
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="../uiuxdesign.html">UI/UX Design</a></li>
-                                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                        </ul>
-
-                                    </div>
+                                   
                                     <ul class="mt-4 text-decoration-none fs-5">
                                         <div class="hover-me">
                                             <li class="big-head" style="color: goldenrod; font-size: 16px;"><a
@@ -129,7 +123,7 @@
                                                     <i class="ri-subtract-fill"></i>
                                                     <a href="Devops.html">Devops</a>
                                                 </li>
-
+                                               
                                             </ul>
 
                                         </div>
@@ -154,44 +148,39 @@
                                         </div>
                                     </div>
                                     <h6 class="mt-3 fs-5">Axess Technolgy</h6>
-                                    <p class="align-items-center">Our passion lies in transforming challenges into
-                                        opportunities, and ideas into functional, elegant software.
-                                        <br>
-                                        <button class="btn btn-primary mt-2 text-center">get quote</button>
+                                    <p class="align-items-center">We specialize in delivering cutting-edge software
+                                        solutions tailored to meet your business needs
+                                        <br><br>
+                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get quote</a></button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4" href="index.html#industies"
-                            style="color: rgb(152, 126, 126);">Industries</a>
+                        <a class="nav-link  px-4" href="index.html#industies" style="color:#ede6e7;">Industries</a>
                         <!-- <div class="dropdown-menu megamenu" role="menu">
-              <div class="row">
-                  <button class="btn btn-primary">get quote</button>
-              </div> -->
+          <div class="row">
+              <button class="btn btn-primary">get quote</button>
+          </div> -->
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4" href="index.html#technology"
-                            style="color: rgb(152, 126, 126);">careers</a>
+                        <a class="nav-link  px-4" href="index.html#technology" style="color:#ede6e7;">careers</a>
+                        <!-- <div class="dropdown-menu megamenu" role="menu">
+        <div class="row">
+            <button class="btn btn-primary">get quote</button>
+        </div> -->
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link  px-4" href="hire.html" style="color:#ede6e7">hire talent</a>
+
+                    </li>
+                    <li class="nav-item dropdown has-megamenu">
+                        <a class="nav-link  px-4" href="contact.html" style="color:#ede6e7">contact</a>
                         <!-- <div class="dropdown-menu megamenu" role="menu">
             <div class="row">
                 <button class="btn btn-primary">get quote</button>
             </div> -->
-                    </li>
-                    <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4" href="hire.html" style="color: rgb(152, 126, 126)">hire talent</a>
-                        <div class="dropdown-menu megamenu" role="menu">
-                            <div class="row">
-                                <button class="btn btn-primary">get quote</button>
-                            </div>
-                    </li>
-                    <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4" href="contact.html" style="color: rgb(152, 126, 126)">contact</a>
-                        <!-- <div class="dropdown-menu megamenu" role="menu">
-                <div class="row">
-                    <button class="btn btn-primary">get quote</button>
-                </div> -->
                     </li><!-- navber-end -->
                 </ul>
             </div>
@@ -236,12 +225,12 @@
                         </div>
                         <div class="off-drop-menus">
                             <div class="d-flex flex-column">
-                                <a href="#">UI/Ux Design</a>
+                                <a href="uiuxdesign.html">UI/Ux Design</a>
                                 <a href="webdevelopment.html">Web Development</a>
-                                <a href="">Software-Testing</a>
-                                <a href="">database-developer</a>
-                                <a href="">devops</a>
-                                <a href="">System-admin</a>
+                                <a href="softwaretesting.html">Software-Testing</a>
+                                <a href="Database.html">database-developer</a>
+                                <a href="Devops.html">devops</a>
+                                
                             </div>
                         </div>
                     </div>
@@ -271,15 +260,15 @@
                             </div>
                         </div>
                         <!-- <div class="off-drop-menus">
-                            <div class="d-flex flex-column">
-                                <a href="#">UI/Ux Design</a>
-                                <a href="webdevelopment.html">Web Development</a>
-                                <a href="">Software-Testing</a>
-                                <a href="">database-developer</a>
-                                <a href="">devops</a>
-                                <a href="">System-admin</a>
-                            </div>
-                        </div> -->
+                        <div class="d-flex flex-column">
+                            <a href="#">UI/Ux Design</a>
+                            <a href="webdevelopment.html">Web Development</a>
+                            <a href="">Software-Testing</a>
+                            <a href="">database-developer</a>
+                            <a href="">devops</a>
+                            <a href="">System-admin</a>
+                        </div>
+                    </div> -->
                     </div>
 
                     <div class="off-drop-btn">
@@ -294,151 +283,238 @@
             </div>
         </div>
     </div>
-    <div style="background-color: #eaf6ff;">
-        <div class="container">
-            <div class="row py-5">
-                <div class="col-md-6 mt-5" data-aos="fade-right" data-aos-anchor-placement="">
-                    <img src="download/UI-design.jpg" class="img-fluid px-5 h-100 mt-3" width="100%" alt="">
-                </div>
-                <div class="col-md-6 mt-5">
-                    <h6 class="fs-3 text-1 fw-bold text-center">
-                        Elevate User Experiences with Exceptional UI/UX Design</h6>
-                    <p class="text-1">
-                        In the digital realm, user experience (UX) and user interface (UI) design are the cornerstones
-                        of
-                        success. Our dedicated team of UI/UX designers specializes in crafting memorable and intuitive
-                        digital experiences.
-                        We believe that every interaction should be seamless and delightful. Our designers meticulously
-                        blend aesthetics with functionality, ensuring that users not only engage but also adore your
-                        digital
-                        product.
-                        From wireframes to prototypes and final design, we are committed to delivering solutions that
-                        captivate and convert. Whether it's a website, mobile app, or software interface, our UI/UX
-                        designs
-                        are tailored to drive user satisfaction and boost your brand.
-                        Discover the transformative power of outstanding UI/UX design with us and make your digital
-                        presence
-                        shine.</p>
-
-                    <div class="row d-flex">
-                        <div class="col-md-6 ">
-                            <button class="btn btn-primary rounded-pill text-white"><a href="contact.html"
-                                    class="text-white mx-3">Get quote</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
 
 
+    <section id="webdevelopement-landpage">
+        <h6 class="display-6 fw-semibold text-center linear-gradient-text custom-height" data-aos="fade-up"
+            data-aos-anchor-placement="top-center" data-aos-duration="1000">
+            <span>Elevate User Experiences with Exceptional UI/UX Design</span>
+        </h6>
+    </section>
+    <p class="mt-3 text-center d-flex justify-content-center text-1 fw-semibold" data-aos="fade-down"
+        data-aos-anchor-placement="top-center" data-aos-duration="1000">In the digital realm, user experience (UX) and
+        user interface (UI) design are the cornerstones of success</p>
     <div class="container">
-        <div class="text-capitalize">
-            <h6 class="display-5 text-center fs-1 text-1 fw-semibold mb-3 mt-3" data-aos="fade-down"
-                data-aos-duration="10000">UI/UX Design</h6>
+        <p class="linear-gradient-text display-6 text-center justify-content-center mt-5"></p>
+    </div>
 
-            </h6>
-            <p class="text-1 text-center fw-normal" data-aos="fade-up" data-aos-anchor-placement="top-center">
-                A UI/UX developer enhances digital experiences by creating user-friendly interfaces. They optimize
-                usability, increase user engagement, and drive brand loyalty. Their expertise boosts product
-                satisfaction, reduces bounce rates, and ultimately leads to business growth through seamless and
-                visually appealing designs.</p>
+    <section id="cta" class="cta">
+        <div class="container">
+            <h3 class="text-center  mb-3" data-aos="zoom-in" data-aos-duration="500">Welcome to <span
+                    class="text-danger mx-1"> Axess
+                    Technology</span> </h3>
+            <p class="text-1" data-aos="fade-left" data-aos-duration="1000">The renowned software development and IT
+                outsourcing company that has been offering
+                Our dedicated team of UI/UX designers specializes in crafting memorable and intuitive digital
+                experiences.
+                We believe that every interaction should be seamless and delightful. Our designers meticulously blend
+                aesthetics with functionality, ensuring that users not only engage but also adore your digital product.
+                .</p>
+            <br />
+            <p class="text-1" data-aos="fade-right" data-aos-anchor-placement="object-fit" data-aos-duration="1000">
+                From wireframes to prototypes and final design, we are committed to delivering solutions that captivate
+                and convert. Whether it's a website, mobile app, or software interface, our UI/UX designs are tailored
+                to drive user satisfaction and boost your brand.</p>
+        </div>
+    </section>
+
+    <section id="software-landpage">
+        <p class="text-center display-6 fw-semibold  linear-gradient-text custom-height" data-aos="flip-up"
+            data-aos-duration="1200">UI/UX Design </p>
+    </section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 text-center">
+                <img src="download/icons8-html-240.png" class="h-50" alt="">
+                <p class="text-center text-capitalize">HTML</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="download/icons8-css-240.png" class="h-50" alt="">
+                <p class="text-center text-capitalize">CSS</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="download/icons8-javascript-240.png" class="h-50" alt="">
+                <p class="text-center text-capitalize">JAVASCRIPT</p>
+            </div>
+            <div class="col-md-2 text-center">
+                <img src="download/icons8-react-native-240.png" class="h-50" alt="">
+                <p class="text-center text-capitalize">REACTJS</p>
+            </div>
+          
+        </div>
+    </div>
+    <div class="container-fluid" style="background-color: aliceblue; margin-top: -104px;">
+        <p class="text-center display-6 fw-semibold mt-5 linear-gradient-text custom-height pt-4 pb-3"
+            data-aos="flip-up" data-aos-duration="900">Let's Bring Your Ideas to Life </p>
+        <div class="row">
+            <div class="col-md-6" data-aos="fade-right" data-aos-duration="600">
+                <img src="download/UI-design.jpg" class="rounded float-start img-fluid mb-3" alt="">
+            </div>
+            <div class="col-md-6">
+
+                <P class="text-1" data-aos="fade-down" data-aos-duration="600">Discover the transformative power of
+                    outstanding UI/UX design with us and make your digital presence shine.</P>
+                <div class="row" data-aos="fade-down" data-aos-duration="600">
+                    <div class="col-md-6 form-group mt-3">
+                        <input type="text" name="fname" class="form-control" id="fname" placeholder="Firist" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 ">
+                        <input type="text" class="form-control" name="lname" id="lname" placeholder="Lastname" required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 ">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                            required>
+                    </div>
+                    <div class="col-md-6 form-group mt-3 " data-aos="fade-down" data-aos-duration="600">
+                        <input type="number" class="form-control" name="phone" id="email" placeholder="Mobile-Number"
+                            required>
+                    </div>
+                </div>
+
+                <div class="form-group mt-3" data-aos="fade-down" data-aos-duration="600">
+                    <textarea class="form-control" name="message" rows="3" placeholder="Message" required></textarea>
+                </div>
+                <button class="btn btn-primary form-control mb-3 mt-3 " data-aos="fade-down"
+                    data-aos-duration="600">Sent Message</button>
+            </div>
         </div>
     </div>
 
-
-    <!-- <footer> -->
-    <footer>
-        <footer id="contact" data-aos="fade-up" data-aos-duration="600">
-            <div class="container-fluid text-white">
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <h6 class=" fw-bold mt-4 px-3 ">Resoures</h6>
-                        <h6 class="ri-cloud-line px-3 fs-5"> <span class="text-white text-capitalize fw-bolder">Axess
-                                Technolgy</span> </h6>
-                        <p class="px-3">Address: 265, Chennai - Theni Hwy, Kamakshi Colony, Chromepet, Chennai, Tamil
-                            Nadu
-                            600047</p>
-                        <h3 class="text-start px-3">Follow us on</h3>
-                        <ul class="d-flex px-3 text-start">
-                            <a href=""><i class="fa-brands fa-facebook-f px-2 fs-5" title="facebook"
-                                    style="color: #1607e4;"></i></a>
-                            <a href=""><i class="fa-brands fa-instagram px-2 fs-5" title="instagram"
-                                    style="color: #d20f0f !important;"></i></a>
-                            <a href=""><i class="fa-brands fa-whatsapp px-2 fs-5" title="whatsapp"
-                                    style="color: #14b817;"></i></a>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <h3 class="text-center text-decoration-none fs-6 mt-4 px-2">Technology</h3>
-                        <ul class="text-center list-unstyled text-decoration-none">
-                            <li><a href="#" class="py-2 my-4 text-white">Azure Hosting </a></li>
-                            <li><a href="#" class="px-2 my-4 text-white">aws Hosting</a></li>
-                            <li><a href="#" class="px-2 my-4 text-white">vpn Hosting</a></li>
-                            <li><a href="#" class="px-2 my-4 text-white"> Cms Hosting</a></li>
-                            <li><a href="#" class="px-2 my-4 text-white">wordpress hosting</a></li>
-                            <li><a href="#" class="px-2 my-4 text-white">vps hosting</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <h3 class="text-center text-decoration-none fs-6 mt-4">company</h3>
-                        <ul class="text-center list-unstyled text-decoration-none mt-3">
-                            <li><a href="" class="text-white">About us</a></li>
-                            <li><a href="" class="text-white">blog</a></li>
-                            <li><a href="" class="text-white">partships</a></li>
-                            <li><a href="" class="text-white">careers</a></li>
-                            <li><a href="" class="text-white">press</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-3">
-                        <h3 class="text-center text-decoration-none mt-4 list-unstyled fs-6">news letter</h3>
-                        <p>Stay updated with the latest in software trends, innovations, and insights. Our newsletter
-                            brings you bite-sized bytes of tech wisdom every week.</p>
+    <footer id="contact" class="overflow-hidden">
+        <div class="container-fluid text-white">
+            <div class="row py-3">
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="600">
+                    <h6 class=" fw-bold mt-4 px-3 ">Resoures</h6>
+                    <h6 class="ri-cloud-line px-3 fs-5"> <span class="text-white text-capitalize fw-bolder">Axess
+                            Technolgy</span> </h6>
+                    <p class="px-3">Address: 265, Chennai - Theni Hwy, Kamakshi Colony, Chromepet, Chennai, Tamil
+                        Nadu
+                        600047</p>
+                    <h3 class="text-start px-3">Follow us on</h3>
+                    <ul class="d-flex px-3 text-start">
+                        <a href=""><i class="fa-brands fa-facebook-f px-2 fs-5" title="facebook"
+                                style="color: #1607e4;"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram px-2 fs-5" title="instagram"
+                                style="color: #d20f0f;"></i></a>
+                        <a href=""></a> <i class="fa-brands fa-whatsapp px-2 fs-5" title="whatsapp"
+                            style="color: #14b817;"></i>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
+                    <h3 class="text-center text-decoration-none fs-6 mt-4 px-2">Technology</h3>
+                    <ul class="text-center list-unstyled text-decoration-none">
+                        <li><a href="#" class="py-2 my-4 text-white">Azure Hosting </a></li>
+                        <li><a href="#" class="px-2 my-4 text-white">aws Hosting</a></li>
+                        <li><a href="#" class="px-2 my-4 text-white">vpn Hosting</a></li>
+                        <li><a href="#" class="px-2 my-4 text-white"> Cms Hosting</a></li>
+                        <li><a href="#" class="px-2 my-4 text-white">wordpress hosting</a></li>
+                        <li><a href="#" class="px-2 my-4 text-white">vps hosting</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="text-center text-decoration-none fs-6 mt-4">company</h3>
+                    <ul class="text-center list-unstyled text-decoration-none mt-3">
+                        <li><a href="" class="text-white">About us</a></li>
+                        <li><a href="" class="text-white">blog</a></li>
+                        <li><a href="" class="text-white">partships</a></li>
+                        <li><a href="" class="text-white">careers</a></li>
+                        <li><a href="" class="text-white">press</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200">
+                    <h3 class="text-center text-decoration-none mt-4 list-unstyled fs-6">news letter</h3>
+                    <p>Stay updated with the latest in software trends, innovations, and insights. Our newsletter brings
+                        you bite-sized bytes of tech wisdom every week.</p>
+                    <div class="mb-3">
+                        <!-- <label class="form-label">Email address</label>
+                      <input type="email" class="form-control" placeholder="Enter your email">
+                      <button class="btn btn-success mt-3 text-center ">submit</button> -->
                     </div>
                 </div>
             </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-            crossorigin="anonymous"></script>
-        <!-- jquery -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
-            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
-            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        </div>
+    </footer>
 
-        <!-- navbar CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos cdn -->
 
-        <script src="index.js"></script>
-        sc
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- index.js -->
+    <script src="index.js"></script>
+    <script>
+        const rangeInput = document.getElementById("myRange");
+        const selectedValue = document.getElementById("selectedValue");
 
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-        <script>
-            AOS.init();
+        rangeInput.addEventListener("input", function () {
+            const value = rangeInput.value;
+            const formattedValue = formatValue(value);
+            selectedValue.textContent = formattedValue;
+        });
 
-            $(document).ready(function () {
-                // Add click event handler to accordion headers
-                $(".off-drop-btn").click(function () {
-                    // Toggle the content of the clicked accordion item
-                    $(this).next(".off-drop-menus").toggle();
-                    $(this).toggleClass('active');
+        function formatValue(value) {
+            const minValue = 1500;
+            const maxValue = 7500;
+            const minDisplayValue = 1500;
+            const maxDisplayValue = 8500;
 
-                    // Close other accordion items except the clicked one
-                    $(".off-drop-btn").not($(this)).removeClass('active')
-                    $(".off-drop-menus").not($(this).next()).hide();
-                });
+            const range = maxValue - minValue;
+            const displayRange = maxDisplayValue - minDisplayValue;
+            const scaledValue = (value / range) * displayRange;
+            const formattedValue = scaledValue + minDisplayValue;
+
+            return formattedValue.toLocaleString("en-US", { style: "currency", currency: "USD" });
+        }
+    </script>
+
+    <script>
+        setTimeout(() => {
+            $('#auto').click();
+        }, 5000);
+
+        $('.off-drop-menus').hide();
+
+        // $('.off-drop-btn').click(function(){
+        //     $(this).siblings('.off-drop-btn').removeClass('.active');
+        //     $(this).toggleClass('active');
+        //     $(this).next().toggle();
+        //     $(this).siblings('.off-drop-menus').hide();
+        // })
+
+        $(document).ready(function () {
+            // Add click event handler to accordion headers
+            $(".off-drop-btn").click(function () {
+                // Toggle the content of the clicked accordion item
+                $(this).next(".off-drop-menus").toggle();
+                $(this).toggleClass('active');
+
+                // Close other accordion items except the clicked one
+                $(".off-drop-btn").not($(this)).removeClass('active')
+                $(".off-drop-menus").not($(this).next()).hide();
             });
-            var nav = document.querySelector('nav');
+        });
+        var nav = document.querySelector('nav');
 
-            window.addEventListener('scroll', function () {
-                if (window.pageYOffset > 100) {
-                    nav.classList.add('bg-dark', 'shadow');
-                } else {
-                    nav.classList.remove('bg-dark', 'shadow');
-                }
-            });
-
-        </script>
+        window.addEventListener('scroll', function () {
+            if (window.pageYOffset > 100) {
+                nav.classList.add('bg-dark', 'shadow');
+            } else {
+                nav.classList.remove('bg-dark', 'shadow');
+            }
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
