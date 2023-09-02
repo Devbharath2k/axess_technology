@@ -17,11 +17,11 @@ let navbar = $(`
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse" id="navbarNav" style="color: rgb(152, 126, 126);">
             <div class="mx-auto"></div>
             <ul class="navbar-nav ms-auto px-6 text-center fw-semibold text-dark" style="color:black">
                 <li class="nav-item dropdown has-megamenu">
-                    <a class="nav-link px-3" style="color:#ede6e7;" href="#">company</a>
+                    <a class="nav-link px-3" style="color:#ede6e7;" href="about.html">company</a>
                     <div class="dropdown-menu megamenu" role="menu">
                         <div class="row">
                             <div class="col-4">
@@ -34,14 +34,7 @@ let navbar = $(`
                                                 <i class="ri-subtract-fill"></i>
                                                 <a href="about.html ">Blog</a>
                                             </li>
-                                            <li class="center-icon" style="font-size: 12px;">
-                                                <i class="ri-subtract-fill"></i>
-                                                <a href="#">partships</a>
-                                            </li>
-                                            <li class="center-icon" style="font-size: 12px;">
-                                                <i class="ri-subtract-fill"></i>
-                                                <a href="#">careers</a>
-                                            </li>
+                                           
                                         </ul>
                                     </div>
                                 </ul>
