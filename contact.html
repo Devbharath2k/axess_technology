@@ -2,29 +2,34 @@
 <html lang="en">
 
 <head>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- bootstrap-cdn-script -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <!-- font-cdn-link -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="navbar.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+    <link rel="stylesheet" href="mininav.css">
+    <link rel="stylesheet" href="contact.css">
+    <!-- font-awesome-cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap-cdn-script -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <!-- OwlCarousel2 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- aos cdn -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- navbar css -->
-    <link rel="stylesheet" href="navber.js">
-    <link rel="stylesheet" href="contact.css">
-    
+    <!-- remix CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- mini nav css -->
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" data-aos="fade-down" data-aos-duration="1000">
         <div class="container-fluid">
             <a href="index.html" id="navber-icons" style="color: goldenrod; opacity: 0.8;" width="50px" height="30px"
                 class="mx-2"><img src="download/Capture.PNG" width="40px" height="30px" class="mb-2" alt="">
@@ -41,7 +46,7 @@
                 <div class="mx-auto"></div>
                 <ul class="navbar-nav ms-auto px-6 text-center fw-semibold text-dark" style="color:black">
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link px-3 " href="#" style="color: goldenrod; opacity: 0.8;" >company</a>
+                        <a class="nav-link px-3" style="color:#ede6e7;" href="#">company</a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row">
                                 <div class="col-4">
@@ -54,7 +59,7 @@
                                                     <i class="ri-subtract-fill"></i>
                                                     <a href="about.html ">Blog</a>
                                                 </li>
-                                               
+
                                             </ul>
                                         </div>
                                     </ul>
@@ -77,22 +82,24 @@
                                         </div>
                                     </div>
                                     <h6 class="mt-3 fs-5">Axess Technology</h6>
-                                    <p class="align-items-center mt-2 mb-2">Our passion lies in transforming challenges into
+                                    <p class="align-items-center mt-2 mb-2">Our passion lies in transforming challenges
+                                        into
                                         opportunities, and ideas into functional, elegant software.
                                         <br>
                                         <br>
-                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get quote</a></button>
-                                        
+                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get
+                                                quote</a></button>
+
                                     </p>
                                 </div>
                             </div>
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link   px-4 big-shot" href="#service" style="color: goldenrod; opacity: 0.8;" ;>services</a>
+                        <a class="nav-link  px-4 big-shot" href="#service" style="color:#ede6e7;">services</a>
                         <div class="dropdown-menu megamenu" role="menu">
                             <div class="row">
                                 <div class="col-4">
-                                   
+
                                     <ul class="mt-4 text-decoration-none fs-5">
                                         <div class="hover-me">
                                             <li class="big-head" style="color: goldenrod; font-size: 16px;"><a
@@ -119,7 +126,7 @@
                                                     <i class="ri-subtract-fill"></i>
                                                     <a href="Devops.html">Devops</a>
                                                 </li>
-                                               
+
                                             </ul>
 
                                         </div>
@@ -147,32 +154,33 @@
                                     <p class="align-items-center">We specialize in delivering cutting-edge software
                                         solutions tailored to meet your business needs
                                         <br><br>
-                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get quote</a></button>
+                                        <button class="btn btn-primary"><a href="contact.html" class="text-white">get
+                                                quote</a></button>
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link   px-4" href="index.html#industies" style="color: goldenrod; opacity: 0.8;">Industries</a>
+                        <a class="nav-link  px-4" href="index.html#industies" style="color:#ede6e7;">Industries</a>
                         <!-- <div class="dropdown-menu megamenu" role="menu">
           <div class="row">
               <button class="btn btn-primary">get quote</button>
           </div> -->
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link   px-4" href="index.html#technology" style="color: goldenrod; opacity: 0.8;">careers</a>
+                        <a class="nav-link  px-4" href="index.html#technology" style="color:#ede6e7;">careers</a>
                         <!-- <div class="dropdown-menu megamenu" role="menu">
         <div class="row">
             <button class="btn btn-primary">get quote</button>
         </div> -->
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link  px-4" href="hire.html" style="color: goldenrod; opacity: 0.8;">hire talent</a>
+                        <a class="nav-link  px-4" href="hire.html" style="color:#ede6e7">hire talent</a>
 
                     </li>
                     <li class="nav-item dropdown has-megamenu">
-                        <a class="nav-link px-4" href="contact.html"style="color: goldenrod; opacity: 0.8;">contact</a>
+                        <a class="nav-link  px-4" href="contact.html" style="color:#ede6e7">contact</a>
                         <!-- <div class="dropdown-menu megamenu" role="menu">
             <div class="row">
                 <button class="btn btn-primary">get quote</button>
@@ -182,7 +190,7 @@
             </div>
         </div>
     </nav>
-    
+
     <div class="offcanvas offcanvas-start mini-nav" tabindex="-1" id="offcanvasExample"
         aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header border-0">
@@ -211,7 +219,7 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <div>
                         <div class="off-drop-btn">
                             <div class="d-flex justify-content-between align-items-center">
@@ -221,12 +229,12 @@
                         </div>
                         <div class="off-drop-menus">
                             <div class="d-flex flex-column">
-                                <a href="#">UI/UX Design</a>
+                                <a href="uiuxdesign.html">UI/Ux Design</a>
                                 <a href="webdevelopment.html">Web Development</a>
-                                <a href="">Software-Testing</a>
-                                <a href="">database-developer</a>
-                                <a href="">devops</a>
-                                <a href="">System-admin</a>
+                                <a href="softwaretesting.html">Software-Testing</a>
+                                <a href="Database.html">database-developer</a>
+                                <a href="Devops.html">devops</a>
+
                             </div>
                         </div>
                     </div>
@@ -237,7 +245,7 @@
                                 <!-- <i class="ri-arrow-down-s-line"></i> -->
                             </div>
                         </div>
-    
+
                     </div>
                     <div>
                         <div class="off-drop-btn">
@@ -246,7 +254,7 @@
                                 <!-- <i class="ri-arrow-down-s-line"></i> -->
                             </div>
                         </div>
-    
+
                     </div>
                     <div>
                         <div class="off-drop-btn">
@@ -256,483 +264,70 @@
                             </div>
                         </div>
                         <!-- <div class="off-drop-menus">
-                            <div class="d-flex flex-column">
-                                <a href="#">UI/Ux Design</a>
-                                <a href="webdevelopment.html">Web Development</a>
-                                <a href="">Software-Testing</a>
-                                <a href="">database-developer</a>
-                                <a href="">devops</a>
-                                <a href="">System-admin</a>
-                            </div>
-                        </div> -->
+                        <div class="d-flex flex-column">
+                            <a href="#">UI/Ux Design</a>
+                            <a href="webdevelopment.html">Web Development</a>
+                            <a href="">Software-Testing</a>
+                            <a href="">database-developer</a>
+                            <a href="">devops</a>
+                            <a href="">System-admin</a>
+                        </div>
+                    </div> -->
                     </div>
-    
+
                     <div class="off-drop-btn">
                         <div class="d-flex justify-content-between align-items-center">
                             <a href="contact.html" class="text-dark mt-3 mb-2 fs-5">Contact</a>
                             <!-- <i class="ri-arrow-down-s-line"></i> -->
                         </div>
                     </div>
-    
+
                     <!-- Other menu items here -->
                 </ul>
             </div>
         </div>
     </div>
-    <div class="new-contact-design">
-        <section class="hero-banner position-relative " style="background-image:url(download/mapping.jpg);">
-            <div class="container text-center overflow-visible">
-                <div class="row justify-content-center align-items-center">
-                    <h5 class=" text-uppercase display-6 fw-bold mt-5 mb-5 text-white" data-aos="fade-right"
-                        data-aos-duration="900">
-                        get in touch</h5>
-                    <p class="d-flex jc  text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-                        laudantium provident et quam
-                        ipsum soluta ut corrupti ea, eaque magni dicta neque.
-                    </p>
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mt-5">
+                   <h6 class="text-center mt-5 display-5 fw-semibold text-white">Get Your Business Boom in the Digital World</h6>
                 </div>
-            </div>
-        </section>
 
-        <section class="d-flex justify-content-center " id="updesign">
-            <div class="container-md mt-3 w-75 mx-auto contact-container">
-                <div class="row m-0 align-items-center justify-content-between shadow position-relative">
-                    <div class="col-lg-5 col-xl-4 rounded-4 d-none d-lg-block p-5 align-self-stretch position-relative overflow-hidden"
-                        id="from" data-aos="fade-right" data-aos-duration="800"
-                        style="background-color:#18222cc9;color: white; ">
-                        <h1 class="primary">Contact Info</h1>
-                        <p class="d-flex justify-content-center"> Get in touch to discuss. Please give us a call, drop
-                            us email or fill out the contact form and we’ll get back to you.
-                        <div class="mb-2">
-                            <p class="d-flex justify-content-center mx-2"><i class="fa-solid fa-location-dot  mt-1"
-                                    style="color: #e23f08;"></i>
-                                265, Chennai - Theni Hwy, Kamakshi Colony, Chromepet, Chennai, Tamil Nadu 600047</p>
-                            <p><i class="fa-solid fa-phone  mt-4 my-4 mx-1 " style="color: #c7cfdc;"></i>
-                                +91 333333333</p>
-                            <p><i class="fa-regular fa-envelope mt-4 my-4 mx-1"
-                                    style="color: #e3d216;"></i></i>Axess-Technology</p>
-                            <div class="d-flex align-items-center justify-content-between px-2 mt-5" id="social-links">
-                                <a href=""><i class="fa-brands fa-facebook-f ms-auto px-1 fs-4" title="facebook"
-                                        style="color: #6359ee; font-size: 24px; margin-right: 0px;"></i></a>
-                                <a href=""><i class="fa-brands fa-instagram mx-2 px-2 fs-4" title="instagram"
-                                        style="color: #d20f0f !important; font-size: 24px; margin-right: 10px;"></i></a>
-                                <a href=""><i class="fa-brands fa-whatsapp mx-2 px-2 fs-4" title="whatsapp"
-                                        style="color: #14b817; font-size: 24px; margin-right: 10px;"></i></a>
-                                <a href=""><i class="fa-brands fa-google  px-1 fs-4" title="google"
-                                        style="color: #131311; font-size: 24px; margin-right: 10px;"></i></a>
+                <div class="col-md-4 mt-3 d-flex justify-content-end">
+                    <section class="vh-100 mt-5">
+                        <div class="row d-flex justify-content-center align-items-center">
+                            <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                                <div class="card-body text-center">
+                                    <input type="text" name="username" class="form-control mt-3 mb-1  shadow-none border-0 rounded-0 border-bottom ps-0"
+                                        placeholder="Username">
+
+                                    <input type="text" name="Lastname" class="form-control mt-3 mb-1 shadow-none border-0 rounded-0 border-bottom ps-0 "
+                                        placeholder="Lastname">
+
+                                    <input type="email" name="E-mail" class="form-control mt-3 mb-1 shadow-none border-0 rounded-0 border-bottom ps-0"
+                                        placeholder="E-mail">
+
+                                    <input type="number" name="phone" class="form-control mt-3 mb-1 shadow-none border-0 rounded-0 border-bottom ps-0"
+                                        placeholder="phone-Number">
+
+                                    <input type="text" name="phone" class="form-control mt-3 shadow-none border-0 rounded-0 border-bottom "
+                                        placeholder="Requirements">
+                                    <br>
+                                    <button class="btn btn-primary form-control mb-2 ">submit</button>
+                                    <p>We respect your <a href="#" class="text-danger text-decoration-none">privacy policy </a>and we will never spam you</p>
+                                </div>
                             </div>
-
                         </div>
-                    </div>
-
-                    <div class="col-lg-7 col-xl-8  ms-auto py-5 px-5 p-md-5 rounded-3" id="my-element"
-                        style="background-color: white;" data-aos="fade-left" data-aos-duration="800">
-                        <form class="row align-items-center g-4 gx-5" action="presales.php" method="POST">
-                            <div class="col-6" style="color:rgb(215, 181, 94);">
-                                <label for="name" class="mb-2">FirstName</label>
-                                <input type="text" id="Fname" name="Fname"
-                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                    placeholder="name" required>
-                            </div>
-                            <div class="col-6" style="color:rgb(215, 181, 94);">
-                                <label for="text" class="mb-2">lastname</label>
-                                <input type="text" id="Lname" name="Lname"
-                                    class="form-control shadow-none form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                    placeholder="lastname" required>
-                            </div>
-                            <div class="col-6" style="color:rgb(215, 181, 94);">
-                                <label for="companyname" class="mb-2">E-mail</label>
-                                <input type="email" id="Email" name="Email"
-                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                    placeholder="Axess-Technology" required>
-                            </div>
-                            <div class="col-6" style="color:rgb(215, 181, 94);">
-                                <label for="mobileno" class="mb-2">Mobile No</label>
-                                <input type="text" id="Mobile" name="Mobile"
-                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                    placeholder="+91 32773 313XX" required>
-                            </div>
-                            <div class="col-12 p-0 p-md-auto">
-                                <!-- <p class="text-center fw-semibold mt-2">what you website you be need</p> -->
-                                <ul class="nav nav-pills p-0 p-md-auto mb-3 mt-2 text-center justify-content-start"
-                                    id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active rounded-pill mx-1 btn-success"
-                                            id="pills-home-tab" s data-bs-toggle="pill" data-bs-target="#pills-home"
-                                            type="button" role="tab" aria-controls="pills-home"
-                                            aria-selected="true">pre-sales</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link rounded-pill mx-1" id="pills-profile-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-profile" type="button"
-                                            role="tab" aria-controls="pills-profile" aria-selected="false">project
-                                            proposal</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link rounded-pill mx-1" id="pills-contact-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-contact" type="button"
-                                            role="tab" aria-controls="pills-contact" aria-selected="false">talk to
-                                            support</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link rounded-pill mx-1" id="pills-others-tab"
-                                            data-bs-toggle="pill" data-bs-target="#pills-others" type="button"
-                                            role="tab" aria-controls="pills-others"
-                                            aria-selected="false">Others</button>
-                                    </li>
-
-                                </ul>
-
-                                <div class="tab-content" id="pills-tabContent">
-                                    <!-- pre-sales -->
-                                    <div class="tab-pane fade show active rounded-pill" id="pills-home" role="tabpanel"
-                                        aria-labelledby="pills-home-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-md-6 mt-2">
-                                                <p>Which product we can help you with</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product1" name="Tech_Product1"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mt-2">
-                                                <p>Project Duration</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product2" name="Tech_Product2"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-md-6 mt-2">
-                                                    <p>Expected date of confinment *</p>
-                                                    <div class="input-group">
-                                                        <select id="Tech_Product3" name="Tech_Product3"
-                                                            class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                            <option value="" disabled selected>Select an option
-                                                            </option>
-                                                            <option value="option1">wps.develpement pro </option>
-                                                            <option value="option2">wc dosc</option>
-                                                            <option value="option3">1-3 months</option>
-                                                            <option value="option3">above 4 months</option>
-                                                        </select>
-                                                        <i class="ri-arrow-down-fill pt-2 "
-                                                            style="padding-right: 22px; font-size:12px ;"></i>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-6 mt-2">
-                                                    <p>Expected date of confinment *</p>
-                                                    <div class="input-group">
-                                                        <select id="Tech_Product4" name="Tech_Product4"
-                                                            class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                            <option value="" disabled selected>Select an option
-                                                            </option>
-                                                            <option value="option1">wps.develpement pro </option>
-                                                            <option value="option2">wc dosc</option>
-                                                            <option value="option3">1-3 months</option>
-                                                            <option value="option3">above 4 months</option>
-                                                        </select>
-                                                        <i class="ri-arrow-down-fill pt-2 "
-                                                            style="padding-right: 22px; font-size:12px ;"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <label for="" class="form-label mt-2 mb-2"
-                                                style="color:rgb(215, 181, 94);">message
-                                            </label>
-                                            <input type="text" name="Message1"
-                                                class="form-control shadow-none border-0 mt-2 rounded-0 border-bottom ps-0"
-                                                placeholder="" id="Message1">
-                                            <input type="submit" class="btn btn-primary form-control mt-2" name="Press" id="Press"
-                                                value="Send">
-                                        </div>
-                                    </div>
-                                      <!-- pre-sales -->
-                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel"
-                                        aria-labelledby="pills-profile-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-md-6 mt-2">
-                                                <p>Estimation of duration</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product4" name="Tech_Product4"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">1-3 Weeks </option>
-                                                        <option value="option2">1 month</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mt-2">
-                                                <p>Delivery time for the product</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product5" name="Tech_Product5"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">Ui/Ux Design </option>
-                                                        <option value="option2">Flutter developemnt</option>
-                                                        <option value="option3">Web developemnt</option>
-                                                        <option value="option3">software Testing</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <p>What type of project?</p>
-                                                <!-- Default checked radio -->
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2" checked />
-                                                    <label class="form-check-label" for="flexRadioDefault2"> Digital
-                                                        Products </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault" checked />
-                                                    <label class="form-check-label" for="flexRadioDefault2">
-                                                        Services
-                                                        Consulting</label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                                        id="flexRadioDefault2" checked />
-                                                    <label class="form-check-label" for="flexRadioDefault2">IT
-                                                        Training
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <p class="mt-2">What is your approximate budget</p>
-                                                <form class="multi-range-field my-5 pb-5">
-                                                    <input id="myRange" class="multi-range w-50 h-25" type="range"
-                                                        min="0" max="100" />
-                                                    <p id="selectedValue"></p>
-                                                </form>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <p class="mt-2">
-                                                    Already have a doc about your project</p>
-                                                <input type="file">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
-                                        aria-labelledby="pills-contact-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-md-6 mt-2">
-                                                <p>Estimated Delivery time of product</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product6" name="Tech_Product6"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mt-2">
-                                                <p>Set up delivery time</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product7" name="Tech_Product7"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6 mt-2">
-                                                <p>Product delivery time</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product8" name="Tech_Product8"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 mt-2">
-                                                <p>Project Delivery Time</p>
-                                                <div class="input-group">
-                                                    <select id="Tech_Product9" name="Tech_Product9"
-                                                        class="form-control shadow-none border-0 rounded-0 border-bottom ps-0">
-                                                        <option value="" disabled selected>Select an option</option>
-                                                        <option value="option1">wps.develpement pro </option>
-                                                        <option value="option2">wc dosc</option>
-                                                        <option value="option3">1-3 months</option>
-                                                        <option value="option3">above 4 months</option>
-                                                    </select>
-                                                    <i class="ri-arrow-down-fill pt-2 "
-                                                        style="padding-right: 22px; font-size:12px ;"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade" id="pills-others" role="tabpanel"
-                                        aria-labelledby="pills-others-tab" tabindex="0">
-                                        <div class="row">
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label" style="color:rgb(215, 181, 94);">First
-                                                    Name</label>
-                                                <input type="text" name="Firstname"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="name" id="Firstname">
-                                            </div>
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label" style="color:rgb(215, 181, 94);">last
-                                                    Name</label>
-                                                <input type="text" name="Lastname"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="lastname" id="Lastname">
-                                            </div>
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label"
-                                                    style="color:rgb(215, 181, 94);">E-mail</label>
-                                                <input type="text" name="Mail"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="email id" id="Mail">
-                                            </div>
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label"
-                                                    style="color:rgb(215, 181, 94);">moblie</label>
-                                                <input type="text" name="Phone"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="+91 777777" id="Phone">
-                                            </div>
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label" style="color:rgb(215, 181, 94);">date
-                                                    of
-                                                    Birth</label>
-                                                <input type="date" name="Date"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="date of Birth" id="Date">
-                                            </div>
-                                            <div class="col-6 mt-4">
-                                                <label for="" class="form-label"
-                                                    style="color:rgb(215, 181, 94);">address</label>
-                                                <input type="text" name="Address"
-                                                    class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                                    placeholder="Address" id="Address">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- <div class="row">
-                                    <div class="col-md-12 mt-2">
-                                        <label for="" class="form-label mt-2" style="color:rgb(215, 181, 94);">message
-                                        </label>
-                                        <input type="text" name="message1"
-                                            class="form-control shadow-none border-0 rounded-0 border-bottom ps-0"
-                                            placeholder="" id="message1">
-                                    </div>
-                                </div>
-                                <input type="submit" class="btn btn-primary form-control mt-2" name="submit"
-                                    value="Send"> -->
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-    </div>
-
-
-    <!-- <footer-start-->
-    <footer id="contact" class="overflow-hidden">
-        <div class="container-fluid text-white">
-            <div class="row py-3">
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="600">
-                    <h6 class=" fw-bold mt-4 px-3 ">Resoures</h6>
-                    <h6 class="ri-cloud-line px-3 fs-5"> <span class="text-white text-capitalize fw-bolder">Axess
-                            Technolgy</span> </h6>
-                    <p class="px-3">Address: 265, Chennai - Theni Hwy, Kamakshi Colony, Chromepet, Chennai, Tamil
-                        Nadu
-                        600047</p>
-                    <h3 class="text-start px-3">Follow us on</h3>
-                    <ul class="d-flex px-3 text-start">
-                        <a href=""><i class="fa-brands fa-facebook-f px-2 fs-5" title="facebook"
-                                style="color: #1607e4;"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram px-2 fs-5" title="instagram"
-                                style="color: #d20f0f;"></i></a>
-                        <a href=""></a> <i class="fa-brands fa-whatsapp px-2 fs-5" title="whatsapp"
-                            style="color: #14b817;"></i>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="800">
-                    <h3 class="text-center text-decoration-none fs-6 mt-4 px-2">Technology</h3>
-                    <ul class="text-center list-unstyled text-decoration-none">
-                        <li><a href="#" class="py-2 my-4 text-white">Azure Hosting </a></li>
-                        <li><a href="#" class="px-2 my-4 text-white">aws Hosting</a></li>
-                        <li><a href="#" class="px-2 my-4 text-white">vpn Hosting</a></li>
-                        <li><a href="#" class="px-2 my-4 text-white"> Cms Hosting</a></li>
-                        <li><a href="#" class="px-2 my-4 text-white">wordpress hosting</a></li>
-                        <li><a href="#" class="px-2 my-4 text-white">vps hosting</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1000">
-                    <h3 class="text-center text-decoration-none fs-6 mt-4">company</h3>
-                    <ul class="text-center list-unstyled text-decoration-none mt-3">
-                        <li><a href="" class="text-white">About us</a></li>
-                        <li><a href="" class="text-white">blog</a></li>
-                        <li><a href="" class="text-white">partships</a></li>
-                        <li><a href="" class="text-white">careers</a></li>
-                        <li><a href="" class="text-white">press</a></li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="1200">
-                    <h3 class="text-center text-decoration-none mt-4 list-unstyled fs-6">news letter</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis similique laboriosam fuga!</p>
-                    <div class="mb-3">
-                        <!-- <label class="form-label">Email address</label>
-                          <input type="email" class="form-control" placeholder="Enter your email">
-                          <button class="btn btn-success mt-3 text-center ">submit</button> -->
-                    </div>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
+    <span>
 
-    <!-- </footer-end> -->
+    </span>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
@@ -740,53 +335,66 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
         integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- owl-carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- aos cdn -->
 
-    <!-- navbar CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- index.js -->
+    <script src="index.js"></script>
     <script>
-        AOS.init();
-    </script>
+        const rangeInput = document.getElementById("myRange");
+        const selectedValue = document.getElementById("selectedValue");
 
-
-    <script>
-        let mbFun = () => {
-            let bt = $('.contact-container').innerHeight();
-            $('.new-contact-design').css({
-                marginBottom: bt - 100
-            })
-        }
-
-        mbFun();
-
-        $('.nav-pills .nav-link').click(function () {
-            mbFun();
-        })
-
-        $(document).ready(function () {
-            const rangeInput = $("#myRange");
-            const selectedValue = $("#selectedValue");
-
-            rangeInput.on("input", function () {
-                const value = rangeInput.val();
-                const formattedValue = formatValue(value);
-                selectedValue.text(formattedValue);
-            });
-
-            function formatValue(value) {
-                const minValue = 1500;
-                const maxValue = 7500;
-                const minDisplayValue = 1500;
-                const maxDisplayValue = 8500;
-
-                const range = maxValue - minValue;
-                const displayRange = maxDisplayValue - minDisplayValue;
-                const scaledValue = (value / range) * displayRange;
-                const formattedValue = scaledValue + minDisplayValue;
-
-                return formattedValue.toLocaleString("en-US", { style: "currency", currency: "USD" });
-            }
+        rangeInput.addEventListener("input", function () {
+            const value = rangeInput.value;
+            const formattedValue = formatValue(value);
+            selectedValue.textContent = formattedValue;
         });
 
+        function formatValue(value) {
+            const minValue = 1500;
+            const maxValue = 7500;
+            const minDisplayValue = 1500;
+            const maxDisplayValue = 8500;
+
+            const range = maxValue - minValue;
+            const displayRange = maxDisplayValue - minDisplayValue;
+            const scaledValue = (value / range) * displayRange;
+            const formattedValue = scaledValue + minDisplayValue;
+
+            return formattedValue.toLocaleString("en-US", { style: "currency", currency: "USD" });
+        }
+    </script>
+
+    <script>
+        setTimeout(() => {
+            $('#auto').click();
+        }, 5000);
+
+        $('.off-drop-menus').hide();
+
+        // $('.off-drop-btn').click(function(){
+        //     $(this).siblings('.off-drop-btn').removeClass('.active');
+        //     $(this).toggleClass('active');
+        //     $(this).next().toggle();
+        //     $(this).siblings('.off-drop-menus').hide();
+        // })
+
+        $(document).ready(function () {
+            // Add click event handler to accordion headers
+            $(".off-drop-btn").click(function () {
+                // Toggle the content of the clicked accordion item
+                $(this).next(".off-drop-menus").toggle();
+                $(this).toggleClass('active');
+
+                // Close other accordion items except the clicked one
+                $(".off-drop-btn").not($(this)).removeClass('active')
+                $(".off-drop-menus").not($(this).next()).hide();
+            });
+        });
         var nav = document.querySelector('nav');
 
         window.addEventListener('scroll', function () {
@@ -796,8 +404,9 @@
                 nav.classList.remove('bg-dark', 'shadow');
             }
         });
-
-
+    </script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

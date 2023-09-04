@@ -1,160 +1,25 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /* text-transform: capitalize !important; */
-    text-decoration: none !important;
-    list-style: none;
-    transition: .3s;
-}
-
-/* Define your custom active color */
-.nav-pills .nav-item .nav-link.active {
-    background-color: rgba(10, 145, 10, 0.305) !important; 
-    color: white; 
-}
-
-
-button {
-    background-color: skyblue;
-}
-
-
-#pills-tab {
-    justify-content: center;
-    align-items: center;
-    padding: 1px 10px;
-}
-
-.nav-link {
-    background-color: none;
-}
-
-.form-control:hover,
-.form-control:focus {
-    border-bottom-color: gold !important;
-    /* background-color: red; */
-}
-
-
-
-
-#navber-icons {
-    color: goldenrod !important;
-    border: none !important;
-}
-
-
-/* navber */
-nav.navbar {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* background-color: #495469 !important; */
-}
-
-.dropdown:hover>.dropdown-menu,
-.dropdown:focus>.dropdown-menu {
-    display: flex;
-    width: 60%;
-    margin-left: auto;
-    position: absolute;
-    justify-content: center;
-    overflow: break-word;
-    align-items: center;
-    justify-content: center;
-}
-
-.dropdown-menu ul li {
-    display: block;
-    position: relative;
-    cursor: pointer;
-    padding: 10px 0;
-    margin: 0;
-    overflow: hidden;
-    border-radius: 1px 12px;
-    text-align: left;
-}
-
-#heading2 {
-    display: inline-flex !important;
-    margin-top: 0;
-    padding: 10 22px !important;
-    justify-content: end !important;
-}
-
-nav ul li a {
-    font-size: medium !important;
-}
-
-.px-6 {
-    padding-right: 22px !important;
-    padding: 0 22px !important;
-}
-
-.navbar a:hover:not(.navbar-brand),
-footer a:hover {
-    color: goldenrod;
-    text-decoration: none;
-    /* border-bottom: 1px solid black !important; */
-}
-
-.navbar .has-megamenu {
-    position: static !important;
-}
-
-.navbar .megamenu {
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin-top: 0;
-}
-
-
-
-.hero-banner {
-    /* background-color: #f0f0fc;  */
-
-    background-position: center;
+.contact {
+    background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("download/coworkers.jpg") fixed center center;
     background-size: cover;
-    /* height: 500px; */
-    height: 80vh;
+    padding: 57px 0 !important; /* Increase the padding to adjust the height */
+    display: flex;
+    justify-content: center;
 }
 
-#updesign {
-    margin-top: -250px;
 
+.text-1 {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    word-spacing: 0.5rem;
+    font-weight: 600;
 }
 
-/* desktop has been end  */
-
-/* ============ mobile view ============ */
-@media(max-width: 991px) {
-
-    .navbar.fixed-top .navbar-collapse,
-    .navbar.sticky-top .navbar-collapse {
-        overflow-y: auto;
-        max-height: 90vh;
-        margin-top: 10px;
-    }
-
-    .contact-container {
-        width: 90% !important;
-    }
-}
-
-footer {
-    background-color: #04062C !important;
-    padding-top: 12px !important;
-    padding: 12px 12px !important;
-    text-decoration: none !important;
-    color: white;
-}
-
-.new-contact-design {
-    height: 650px;
-    position: relative;
-    margin-bottom: 500px;
+#getintouch{
+    width: 100%;
+    height: fit-content;
+    margin-top: 100px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
