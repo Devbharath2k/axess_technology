@@ -135,8 +135,8 @@ footer a:hover {
 }
 
 .c-item {
-    height: 450px;
-}
+    height: 600px !important;
+} 
 
 .c-img {
     height: 100%;
