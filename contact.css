@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none !important;
+    list-style: none;
+    transition: .3s;
+}
+
+
 .contact {
     background: linear-gradient(rgba(40, 58, 90, 0.5), rgba(40, 58, 90, 0.5)), url("download/coworkers.jpg") fixed center center;
     background-size: cover;
@@ -22,4 +35,25 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.navbar a:hover:not(.navbar-brand),
+footer a:hover {
+    color: goldenrod;
+    text-decoration: none;
+    /* border-bottom: 1px solid black !important; */
+}
+
+/* footer a{
+    padding: 5px 10px !important;
+    display: inline-block;
+
+} */
+
+footer {
+    background-color: #04062C !important;
+    padding-top: 12px !important;
+    padding: 12px 12px !important;
+    text-decoration: none !important;
+    color: black;
 }
